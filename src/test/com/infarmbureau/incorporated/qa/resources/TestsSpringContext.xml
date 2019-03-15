@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:camel="http://camel.apache.org/schema/spring" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:tx="http://www.springframework.org/schema/tx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd http://camel.apache.org/schema/spring 
+		http://camel.apache.org/schema/spring/camel-spring.xsd http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd">
+
+	<!-- Enables processing of @PostConstruct, @PreDestroy and @Required annotations -->
+	<context:annotation-config />
+
+	<context:component-scan base-package="com.infarmbureau" />
+
+	<!-- Sets up the Spring class to allow access to the JVM system properties -->
+	<context:property-placeholder location="file:${selenium.tests.config.dir}selenium.automated.tests.properties" system-properties-mode="OVERRIDE" />
+
+	<!-- Tells spring to detect and invoke any methods annotated with @PostConstruct -->
+	<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor" />
+
+	<!-- Tells log4j where to look for the log4j.properties file -->
+	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean" id="log4jInitialization">
+		<property name="targetClass" value="org.springframework.util.Log4jConfigurer" />
+		<property name="targetMethod" value="initLogging" />
+		<property name="arguments">
+			<list>
+				<value>${selenium.tests.config.dir}log4j.properties</value>
+			</list>
+		</property>
+	</bean>
+
+	<!-- IFBI classs for reading property configuration files from disk -->
+	<bean class="java.lang.String" id="configLocation">
+		<constructor-arg type="java.lang.String">
+			<value>${selenium.tests.config.dir}</value>
+		</constructor-arg>
+	</bean>
+	<bean class="com.infarmbureau.common.config.IFBIApplicationCache" id="appCache">
+		<constructor-arg ref="configLocation" />
+	</bean>
+
+	<bean class="com.infarmbureau.onpay.test.utilities.ExceedBillAccountAdminDao" id="exceedBillAccountAdminDao">
+		<property name="cache" ref="appCache" />
+	</bean>
+
+	<camelContext xmlns="http://camel.apache.org/schema/spring" id="camel">
+		<propertyPlaceholder id="camelContextConfigProps"
+							 location="file:${selenium.tests.config.dir}camelContextSpecific.properties" />
+	</camelContext>
+</beans>
