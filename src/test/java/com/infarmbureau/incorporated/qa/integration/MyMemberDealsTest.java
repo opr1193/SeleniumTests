@@ -1,4 +1,4 @@
-package com.infarmbureau.incorporated.qa.integration.authentication;
+package com.infarmbureau.incorporated.qa.integration;
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.HomePage;
@@ -8,10 +8,10 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class    ResourcesTest  extends IfbIncorporatedTest {
+public class MyMemberDealsTest extends IfbIncorporatedTest {
 
     @Test
-    public void resourcesTest() {
+    public void myMemberDealsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.usernameTextField.input("Markwetzel");
@@ -19,12 +19,12 @@ public class    ResourcesTest  extends IfbIncorporatedTest {
         loginPage.loginButton.safeClick();
 
         HomePage homePage = new HomePage(driver);
-        homePage.resourceslink.safeClick();
+        homePage.mymemberdealslink.safeClick();
 
         homePage.logoutlink.waitAndClick();
 
         LogoutPage logoutPage = new LogoutPage(driver);
-        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
-
+        assertEquals(logoutPage.logoutlabel.getText(), "Logout successful");
     }
 }
+
