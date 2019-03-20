@@ -1,4 +1,4 @@
-package com.infarmbureau.incorporated.qa.integration.authentication;
+package com.infarmbureau.incorporated.qa.integration;
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.HomePage;
