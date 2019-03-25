@@ -4,6 +4,7 @@ package com.infarmbureau.incorporated.qa.integration;
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 
 import com.infarmbureau.incorporated.test.pages.EventRegistration.MemberManagementPage;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import javax.print.DocFlavor;
@@ -11,7 +12,7 @@ import javax.print.DocFlavor;
 
 public class MemberManagementTest extends IfbIncorporatedTest {
 
-                    @Test
+                    @Ignore
                     public void membermanagementtest(){
                         startMemberMgt();
                         MemberManagementPage memberManagementPage = new MemberManagementPage(driver);

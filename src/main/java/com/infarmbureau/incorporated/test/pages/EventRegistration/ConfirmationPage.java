@@ -37,5 +37,4 @@ public class ConfirmationPage extends Page {
     public IfbLabel memberConfirmationNumber = new IfbLabel(driver, memberConfirmationNumberElement);
 
 
-
 }

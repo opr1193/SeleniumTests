@@ -14,12 +14,11 @@ public class LoginLogoutTest extends IfbIncorporatedTest {
     @Test
     public void loginlogouttest() {
         start();
+        HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
         loginPage.usernameTextField.input("Markwetzel");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginButton.safeClick();
-
-        HomePage homePage = new HomePage(driver);
         homePage.logoutlink.waitAndClick();
 
         LogoutPage logoutPage = new LogoutPage(driver);

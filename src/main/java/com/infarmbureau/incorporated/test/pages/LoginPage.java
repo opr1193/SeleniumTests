@@ -11,19 +11,22 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 public class LoginPage extends Page {
 
+
+
     @FindBy(id = "username")
     private WebElement userNameElement;
 
      @FindBy(id = "password")
     private WebElement passwordElement;
-    //*[@id="fm1"]/div[2]/input[4]
-    @FindBy(xpath = "//*[@id=\"fm1\"]/div[2]/input[4]")
 
-    public WebElement loginButtonElement;
+    @FindBy(xpath = "//*[@id=\"fm1\"]/div[2]/input[4]")
+    private WebElement loginbuttonElement;
+
+
 
     public IfbTextBox usernameTextField = new IfbTextBox(driver, userNameElement);
     public IfbTextBox passwordTextField = new IfbTextBox(driver, passwordElement);
-    public IfbButton loginButton = new IfbButton(driver,loginButtonElement );
+    public IfbButton loginButton = new IfbButton(driver,loginbuttonElement );
 
     public LoginPage(WebDriver driver) {
 

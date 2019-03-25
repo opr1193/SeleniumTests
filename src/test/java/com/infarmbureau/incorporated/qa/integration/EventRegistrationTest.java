@@ -5,6 +5,7 @@ import com.infarmbureau.incorporated.test.pages.EventRegistration.ConfirmationPa
 import com.infarmbureau.incorporated.test.pages.EventRegistration.EventRegistrationPage;
 
 
+import org.junit.Ignore;
 import org.junit.Test;
 
 
@@ -20,19 +21,23 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationTest extends IfbIncorporatedTest {
 
-                    @Test
+                    @Ignore
                     public void eventregistrationtest(){
                         startEventReg();
                         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
-                        eventRegistrationPage.membernoRadioButton.check();
-                        eventRegistrationPage.firstNameTextField.input("test");
-                        eventRegistrationPage.lastNameTextField.input("test");
-                        eventRegistrationPage.emailTextField.input("test@example.com");
-                        eventRegistrationPage.continueButton.safeClick();
-                        eventRegistrationPage.firsttimeButton.safeClick();
-                        eventRegistrationPage.contButton.safeClick();
-                        eventRegistrationPage.termsButton.safeClick();
-                        eventRegistrationPage.registerButton.safeClick();
+                        eventRegistrationPage. guestlink.safeClick();
+                        eventRegistrationPage.guestfirstnametextbox.input("test");
+                        eventRegistrationPage.guestlastnametextbox.input("test");
+                        eventRegistrationPage.guestemailtextbox.input("test@example.com");
+                        eventRegistrationPage.guestcountydropdown.select("Hamilton");
+                        eventRegistrationPage.guestcontinuelink.safeClick();
+                        eventRegistrationPage.guestfirsttimecheckbox.check();
+                        eventRegistrationPage.guestbadgenametextbox.clearTextBox();
+                        eventRegistrationPage.guestbadgenametextbox.input("test");
+                        eventRegistrationPage.guestcontinue1link.safeClick();
+                        eventRegistrationPage.guesttermscheckbox.check();
+                        eventRegistrationPage.guestregisterlink.safeClick();
+
                         ConfirmationPage confirmationPage = new ConfirmationPage(driver);
 
                         assertEquals(confirmationPage.confirmationTextField.getText(), "YOUR CONFIRMATION NUMBER IS");
