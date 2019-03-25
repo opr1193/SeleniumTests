@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testData>
-    <baseUrl>https://incext-qa.infarmbureau.org/CAS/register-for-website/</baseUrl>
-    <eventRegUrl>https://app-qa.infarmbureau.org/EventRegistration?event=3</eventRegUrl>
-    <memberMgtUrl>https://member-management-qag.infarmbureau.com/</memberMgtUrl>
-</testData>

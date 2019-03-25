@@ -40,9 +40,6 @@
 		<constructor-arg ref="configLocation" />
 	</bean>
 
-	<bean class="com.infarmbureau.onpay.test.utilities.ExceedBillAccountAdminDao" id="exceedBillAccountAdminDao">
-		<property name="cache" ref="appCache" />
-	</bean>
 
 	<camelContext xmlns="http://camel.apache.org/schema/spring" id="camel">
 		<propertyPlaceholder id="camelContextConfigProps"

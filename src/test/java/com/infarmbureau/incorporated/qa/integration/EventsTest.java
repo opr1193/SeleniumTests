@@ -27,8 +27,8 @@ public class EventsTest extends IfbIncorporatedTest {
                         EventsPage eventsPage = new EventsPage(driver);
                         eventsPage.stateconventionlink.safeClick();
 
-                        LogoutPage logoutPage = new LogoutPage(driver);
-                        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
+                       /* LogoutPage logoutPage = new LogoutPage(driver);
+                        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");*/
 
 
     }

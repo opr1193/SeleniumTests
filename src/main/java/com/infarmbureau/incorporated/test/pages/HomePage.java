@@ -1,5 +1,6 @@
 package com.infarmbureau.incorporated.test.pages;
 
+import com.infarmbureau.qa.elements.IfbButton;
 import com.infarmbureau.qa.elements.IfbLink;
 import com.infarmbureau.qa.pages.Page;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +10,11 @@ import org.openqa.selenium.support.FindBy;
 import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 public class HomePage extends Page {
+
+    @FindBy(xpath = "//*[@id=\"main-nav-container_mn_active\"]/a")
+    private WebElement loginElement;//*[@id="main-nav-container_mn_active"]/a
+
+    public IfbLink loginlink = new IfbLink(driver, loginElement);
 
       @FindBy(xpath= "//*[@id=\"MembershipLink\"]/span/a")
     private WebElement membershipElement;
@@ -59,7 +65,7 @@ public class HomePage extends Page {
 
     public IfbLink mymemberdealslink = new IfbLink(driver, mymemberdealsElement);
 
-    @FindBy(xpath = "//li[@id='LogoutLink']/span/span/a")
+    @FindBy(xpath = "//*[@id=\"main-nav-container_mn_active\"]/a")
     private WebElement logoutElement;
 
     public IfbLink logoutlink = new IfbLink(driver, logoutElement);
