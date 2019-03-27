@@ -12,7 +12,7 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 public class HomePage extends Page {
 
     @FindBy(xpath = "//*[@id=\"main-nav-container_mn_active\"]/a")
-    private WebElement loginElement;//*[@id="main-nav-container_mn_active"]/a
+    private WebElement loginElement;
 
     public IfbLink loginlink = new IfbLink(driver, loginElement);
 
@@ -47,9 +47,6 @@ public class HomePage extends Page {
 
     public IfbLink resourceslink = new IfbLink(driver, resourcesElement);
 
-
-
-
     @FindBy(xpath = "//*[@id=\"MainContent_TCD01A8B5009_Col01\"]/nav/ul/li[8]/a")
     private WebElement contactElement;
 
@@ -65,11 +62,10 @@ public class HomePage extends Page {
 
     public IfbLink mymemberdealslink = new IfbLink(driver, mymemberdealsElement);
 
-    @FindBy(xpath = "//*[@id=\"main-nav-container_mn_active\"]/a")
+    @FindBy(id = "LogoutLink")
     private WebElement logoutElement;
 
     public IfbLink logoutlink = new IfbLink(driver, logoutElement);
-
 
     public HomePage(WebDriver driver) {
 

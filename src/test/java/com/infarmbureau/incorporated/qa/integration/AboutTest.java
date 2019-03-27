@@ -221,8 +221,8 @@ public class AboutTest extends IfbIncorporatedTest {
         homePage.logoutlink.waitForElementToBeVisible(20);
         homePage.logoutlink.safeClick();
 
-       /* LogoutPage logoutPage = new LogoutPage(driver);
-        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");*/
+        LogoutPage logoutPage = new LogoutPage(driver);
+        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
 
     }
 }
