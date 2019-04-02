@@ -32,19 +32,14 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         public IfbTextBox guestemailtextbox = new IfbTextBox(driver, guestemailElement);
 
         @FindBy(xpath = "//*[@id=\"GuestInfo_CountyName\"]")
-        private WebElement guestcountyElement;
+        public WebElement guestcountyElement;
 
         public IfbDropDown guestcountydropdown = new IfbDropDown(driver, guestcountyElement);
 
-        @FindBy(id = "button-row-div\"]/div/input")
-        private WebElement guestcontinueElement;
+        @FindBy(xpath = "//*[@id=\"guestInfo\"]/form/div[4]/div/input")
+        public WebElement guestcontinueElement;
 
-        public IfbLink guestcontinuelink = new IfbLink(driver, guestcontinueElement);
-
-        @FindBy(xpath = "//*[@id=\"formContents\"]/div/div[3]/div/label/span[1]")
-        private WebElement guestfirsttimeElement;
-
-        public IfbCheckBox guestfirsttimecheckbox = new IfbCheckBox(driver, guestfirsttimeElement);
+        public IfbButton guestcontinuebutton = new IfbButton(driver, guestcontinueElement);
 
         @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
         private WebElement guestbadgenameElement;
@@ -56,7 +51,7 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbLink guestcontinue1link = new IfbLink(driver, guestcontinue1Element);
 
-        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[3]/div/div/label/span[1]")
+        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[3]")
         private WebElement guesttermsElement;
 
         public IfbCheckBox guesttermscheckbox = new IfbCheckBox(driver, guesttermsElement);
