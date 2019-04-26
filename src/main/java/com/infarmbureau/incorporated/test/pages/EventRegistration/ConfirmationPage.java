@@ -16,7 +16,7 @@ public class ConfirmationPage extends Page {
         super(driver, SPINNER);
     }
 
-    @FindBy(xpath = "//*[@id=\"kocontainer\"]/div/div/div[1]/div/div[2]/div[2]/div[1]")
+    @FindBy(xpath =  "//*[@id=\"kocontainer\"]/div/div/div[1]/div/div[2]/div[2]/div[1]/h6")
     private WebElement confirmationTextElement;
 
     public IfbLabel confirmationTextField = new IfbLabel(driver, confirmationTextElement);
@@ -24,7 +24,7 @@ public class ConfirmationPage extends Page {
     @FindBy(xpath = "//*[@id=\"kocontainer\"]/div/div/div[1]/div/div[2]/div[2]/div[1]/h2")
     private WebElement confirmationNumberElement;
 
-    @FindBy(xpath = "//*[@id=\"kocontainer\"]/div/div/div[1]/div/div[2]/div[2]/div[1]/h6")
+    @FindBy(xpath = "//*[@id=\"kocontainer\"]/div/div/div[1]/div/div[2]/div[2]/div[1]/h6") //*[@id="kocontainer"]/div/div/div[1]/div/div[2]/div[2]/div[1]/h2
     private WebElement memberConfirmationTextElement;
 
     @FindBy(xpath = "//*[@id=\"kocontainer\"]/div/div/div[1]/div/div[2]/div[2]/div[1]/h2")
@@ -35,6 +35,7 @@ public class ConfirmationPage extends Page {
     public IfbLabel confirmationNumber = new IfbLabel(driver, confirmationNumberElement);
 
     public IfbLabel memberConfirmationTextField = new IfbLabel(driver, memberConfirmationTextElement);
+
 
     public IfbLabel memberConfirmationNumber = new IfbLabel(driver, memberConfirmationNumberElement);
 
