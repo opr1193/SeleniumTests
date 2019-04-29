@@ -19,7 +19,8 @@ public class IfbIncorporatedTest extends DriverTemplate {
   }
 
   private void navigateTo(String url) {
-    driver.navigate().to(
+//    driver.manage().window().fullscreen();
+   driver.navigate().to(
       XMLUtilities.getItemFromNode("baseUrl") + url);
   }
 
