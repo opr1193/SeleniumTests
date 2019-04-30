@@ -73,11 +73,9 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
         eventRegistrationPage.confirmcancelregistrationbutton.safeClick();
 
-        CancellationConfirmationPage cancellationConfirmationPage = new CancellationConfirmationPage(driver);
+       
 
-        assertEquals(cancellationConfirmationPage.registrationcancellationTextField.getText(), "REGISTRATION CANCELLED");
 
-        assertTrue(cancellationConfirmationPage.cancellationtextTextField.isDisplayed());
 
 
         System.out.println("hello");
