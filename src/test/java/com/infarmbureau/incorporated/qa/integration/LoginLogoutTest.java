@@ -1,12 +1,11 @@
 package com.infarmbureau.incorporated.qa.integration;
 
+import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
-
 import com.infarmbureau.incorporated.test.pages.LogoutPage;
 import org.junit.Test;
 
-import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import static org.junit.Assert.assertEquals;
 
 public class LoginLogoutTest extends IfbIncorporatedTest {

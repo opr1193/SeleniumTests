@@ -2,12 +2,8 @@ package com.infarmbureau.incorporated.qa.integration;
 
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
-
 import com.infarmbureau.incorporated.test.pages.EventRegistration.MemberManagementPage;
 import org.junit.Ignore;
-import org.junit.Test;
-
-import javax.print.DocFlavor;
 
 
 public class MemberManagementTest extends IfbIncorporatedTest {

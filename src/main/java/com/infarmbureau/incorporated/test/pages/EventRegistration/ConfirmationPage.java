@@ -1,7 +1,6 @@
 package com.infarmbureau.incorporated.test.pages.EventRegistration;
 
 import com.infarmbureau.qa.elements.IfbLabel;
-import com.infarmbureau.qa.elements.IfbTextBox;
 import com.infarmbureau.qa.pages.Page;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

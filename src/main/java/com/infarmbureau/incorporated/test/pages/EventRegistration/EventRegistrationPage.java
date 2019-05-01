@@ -2,11 +2,9 @@ package com.infarmbureau.incorporated.test.pages.EventRegistration;
 
 import com.infarmbureau.qa.elements.*;
 import com.infarmbureau.qa.pages.Page;
-import com.sun.deploy.config.WinPlatform;
-import org.openqa.selenium.*;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-
 
 import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 

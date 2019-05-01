@@ -7,8 +7,6 @@ import com.infarmbureau.incorporated.test.pages.LogoutPage;
 import com.infarmbureau.incorporated.test.pages.OurPrograms.OurProgramsPage;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
-
 public class OurProgramsTest extends IfbIncorporatedTest {
 
     @Test

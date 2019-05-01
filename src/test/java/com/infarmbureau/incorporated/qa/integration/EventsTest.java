@@ -4,10 +4,7 @@ import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.Events.EventsPage;
 import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
-import com.infarmbureau.incorporated.test.pages.LogoutPage;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
 
 public class EventsTest extends IfbIncorporatedTest {
 

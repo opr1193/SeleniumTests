@@ -2,7 +2,6 @@ package com.infarmbureau.incorporated.qa.integration;
 
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
-import com.infarmbureau.incorporated.test.pages.EventRegistration.CancellationConfirmationPage;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.ConfirmationPage;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.EventRegistrationPage;
 import org.junit.Test;
