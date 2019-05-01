@@ -37,8 +37,6 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 //
 //                        assertTrue(confirmationPage.confirmationNumber.isDisplayed());
 
-
-
                         System.out.println("hello");
                  }
     }
