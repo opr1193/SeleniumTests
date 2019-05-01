@@ -2,7 +2,6 @@ package com.infarmbureau.incorporated.test.pages.EventRegistration;
 
 import com.infarmbureau.qa.elements.IfbButton;
 import com.infarmbureau.qa.elements.IfbLink;
-import com.infarmbureau.qa.elements.IfbRadioButton;
 import com.infarmbureau.qa.elements.IfbTextBox;
 import com.infarmbureau.qa.pages.Page;
 import org.openqa.selenium.WebDriver;

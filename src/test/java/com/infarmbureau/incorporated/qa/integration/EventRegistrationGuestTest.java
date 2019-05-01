@@ -4,11 +4,7 @@ package com.infarmbureau.incorporated.qa.integration;
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.ConfirmationPage;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.EventRegistrationPage;
-import org.junit.Ignore;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 
 public class EventRegistrationGuestTest extends IfbIncorporatedTest {
