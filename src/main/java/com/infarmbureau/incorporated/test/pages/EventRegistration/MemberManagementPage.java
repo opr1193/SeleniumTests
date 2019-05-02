@@ -36,65 +36,68 @@ public class MemberManagementPage extends Page {
     @FindBy(xpath = "//*[@id=\"mat-input-8\"]" )
     private WebElement hosttwitterhandleElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-dialog-0\"]/app-event-editor/form/section[2]/mat-form-field[1]/div/div[1]/div[1]")
+    @FindBy(xpath = "//*[@id=\"mat-input-9\"]")
     private WebElement hashtagElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-48\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-10\"]")
     private WebElement bannerimageElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-9\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-11\"]")
+    private WebElement attendancecostElement;
+
+    @FindBy(xpath = "//*[@id=\"mat-input-13\"]")
     private WebElement venuedescriptionElement;
 
 
-    @FindBy(xpath = "//*[@id=\"mat-input-10\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-14\"]")
     private WebElement addressdescriptionElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-11\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-15\"]")
     private WebElement addressdescriptiontwoElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-12\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-16\"]")
     private WebElement cityElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-13\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-17\"]")
     private WebElement stateElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-14\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-18\"]")
     private WebElement zipcodeElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-dialog-0\"]/app-event-editor/form/app-date-range[1]/form/mat-form-field[1]/div/div[1]/div[2]/mat-datetimepicker-toggle")
+    @FindBy(xpath = "//*[@id=\"mat-input-20\"]")
     private WebElement startdateElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-datetimepicker-0\"]/div[2]/mat-datetimepicker-month-view/table/tbody/tr[1]/td[5]/div")
-    private WebElement startdate;
+//    @FindBy(xpath = "//*[@id=\"mat-datetimepicker-0\"]/div[2]/mat-datetimepicker-month-view/table/tbody/tr[1]/td[5]/div")
+//    private WebElement startdate;
 
-    @FindBy(xpath = "//*[@id=\"mat-datetimepicker-0\"]/div[2]/mat-datetimepicker-clock/div/div[3]/*[@class = 'mat-datetimepicker-clock-cell mat-datetimepicker-clock-cell-selected ng-star-inserted']")
-    private WebElement startHourElement;
+//    @FindBy(xpath = "//*[@id=\"mat-datetimepicker-0\"]/div[2]/mat-datetimepicker-clock/div/div[3]/*[@class = 'mat-datetimepicker-clock-cell mat-datetimepicker-clock-cell-selected ng-star-inserted']")
+//    private WebElement startHourElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-datetimepicker-0\"]/div[2]/mat-datetimepicker-clock/div/div[4]/div[1]")
-    private WebElement startMinuteElement;
+//    @FindBy(xpath = "//*[@id=\"mat-datetimepicker-0\"]/div[2]/mat-datetimepicker-clock/div/div[4]/div[1]")
+//    private WebElement startMinuteElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-datetimepicker-0\"]/div[2]/mat-datetimepicker-month-view/table/tbody/tr[1]/td[5]/div")
+    @FindBy(xpath = "//*[@id=\"mat-input-21\"]")
     private WebElement enddateElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-16\"]")
-    private WebElement starttimeElement;
+//    @FindBy(xpath = "//*[@id=\"mat-input-16\"]")
+//    private WebElement starttimeElement;
+//
+//    @FindBy(xpath = "//*[@id=\"mat-input-17\"]")
+//    private WebElement endtimeElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-17\"]")
-    private WebElement endtimeElement;
-
-    @FindBy(xpath = "//*[@id=\"mat-input-18\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-22\"]")
     private WebElement registrationopenElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-19\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-23\"]")
     private WebElement registrationendElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-input-15\"]")
+    @FindBy(xpath = "//*[@id=\"mat-input-19\"]")
     private WebElement maximumattendeesElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-slide-toggle-2\"]/label")
+    @FindBy(xpath = "//*[@id=\"mat-slide-toggle-2\"]/label/div/div/div[1]")
     private WebElement enablewaitlistElement;
 
-    @FindBy(xpath = "//*[@class=\"mat-raised-button mat-accent\"]")//*[@id="mat-dialog-0"]/app-event-editor/form/div[3]/button/div[2]
+    @FindBy(xpath = "//*[@id=\"mat-dialog-0\"]/app-event-editor/form/div[3]/button/span")
 
     private WebElement saveElement;
 
@@ -119,8 +122,11 @@ public class MemberManagementPage extends Page {
 
     public IfbTextBox hashtagTextField = new IfbTextBox(driver, hashtagElement);
 
+    public IfbTextBox bannerimageTextField = new IfbTextBox(driver, bannerimageElement);
 
-    public IfbTextBox venuedescriptionTexrGield  = new IfbTextBox(driver, venuedescriptionElement);
+    public IfbTextBox attendancecostTextField = new IfbTextBox(driver, attendancecostElement);
+
+    public IfbTextBox venuedescriptionTextField  = new IfbTextBox(driver, venuedescriptionElement);
 
     public IfbTextBox addressdescriptionTextField = new IfbTextBox(driver, addressdescriptionElement);
 
@@ -132,19 +138,19 @@ public class MemberManagementPage extends Page {
 
     public IfbTextBox zipcodeTextField = new IfbTextBox(driver,zipcodeElement);
 
-    public IfbTextBox startdateButton = new IfbTextBox(driver,startdateElement);
+    public IfbTextBox startdateTextField = new IfbTextBox(driver,startdateElement);
+//
+//    public IfbTextBox todaysDate = new IfbTextBox(driver,startdate);
+//
+//    public IfbTextBox startHour = new IfbTextBox(driver,startHourElement);
+//
+//    public IfbTextBox startMinute = new IfbTextBox(driver,startMinuteElement);
 
-    public IfbTextBox todaysDate = new IfbTextBox(driver,startdate);
-
-    public IfbTextBox startHour = new IfbTextBox(driver,startHourElement);
-
-    public IfbTextBox startMinute = new IfbTextBox(driver,startMinuteElement);
-
-    public IfbTextBox endDate = new IfbTextBox(driver, enddateElement);
-
-    public IfbTextBox starttimeTextField = new IfbTextBox(driver,starttimeElement);
-
-    public IfbTextBox endtimeTextField = new IfbTextBox(driver, endtimeElement);
+    public IfbTextBox endDateTextField = new IfbTextBox(driver, enddateElement);
+//
+//    public IfbTextBox starttimeTextField = new IfbTextBox(driver,starttimeElement);
+//
+//    public IfbTextBox endtimeTextField = new IfbTextBox(driver, endtimeElement);
 
     public IfbTextBox registrationopenTextField = new IfbTextBox(driver, registrationopenElement);
 

@@ -4,11 +4,12 @@ package com.infarmbureau.incorporated.qa.integration;
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.MemberManagementPage;
 import org.junit.Ignore;
+import org.junit.Test;
 
 
 public class MemberManagementTest extends IfbIncorporatedTest {
 
-                    @Ignore
+                    @Test
                     public void membermanagementtest(){
                         startMemberMgt();
                         MemberManagementPage memberManagementPage = new MemberManagementPage(driver);
@@ -24,7 +25,13 @@ public class MemberManagementTest extends IfbIncorporatedTest {
 
                        memberManagementPage.hosttwitterhandleTextField.input("@INFB");
 
-                       memberManagementPage.venuedescriptionTexrGield.input("State Fair");
+                       memberManagementPage.hashtagTextField.input("INFBEvents");
+
+                       memberManagementPage.bannerimageTextField.input("https://www.pexels.com/search/nature/");
+
+                       memberManagementPage.attendancecostTextField.input("100");
+
+                       memberManagementPage.venuedescriptionTextField.input("State Fair");
 
                        memberManagementPage.addressdescriptionTextField.input("Indianapolis");
 
@@ -36,23 +43,23 @@ public class MemberManagementTest extends IfbIncorporatedTest {
 
                        memberManagementPage.zipcodeTextField.input("46038");
 
-                       memberManagementPage.startdateButton.safeClick();
+//                       memberManagementPage.startdateButton.safeClick();
+//
+//                       memberManagementPage.todaysDate.safeClick();
+//
+//                       memberManagementPage.startHour.safeClick();
+//
+//                       memberManagementPage.startMinute.safeClick();
+//
+//                       memberManagementPage.endDate.safeClick();
 
-                       memberManagementPage.todaysDate.safeClick();
+                       memberManagementPage.startdateTextField.input("06/10/2019");
 
-                       memberManagementPage.startHour.safeClick();
+                       memberManagementPage.endDateTextField.input("06/24/2019");
 
-                       memberManagementPage.startMinute.safeClick();
+                       memberManagementPage.registrationopenTextField.input("05/05/2019");
 
-                       memberManagementPage.endDate.safeClick();
-
-                       memberManagementPage.starttimeTextField.input("01/10/2019");
-
-                       memberManagementPage.endtimeTextField.input("01/24/2019");
-
-                       memberManagementPage.registrationopenTextField.input("01/05/2019");
-
-                       memberManagementPage.registrationendTextField.input("01/07/2019");
+                       memberManagementPage.registrationendTextField.input("05/07/2019");
 
                        memberManagementPage.maximumattendeesTextField.input("50");
 
