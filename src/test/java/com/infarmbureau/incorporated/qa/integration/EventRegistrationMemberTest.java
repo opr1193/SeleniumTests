@@ -46,9 +46,9 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
         eventRegistrationPage.session8firstattendeecheckbox.check();
         eventRegistrationPage.session8secondattendeecheckbox.check();
         eventRegistrationPage.selectsessioncontinuebutton.safeClick();
-//                        eventRegistrationPage.firstattendeeemailtextbox.input("amy.wetzel@example.com");
-//                        eventRegistrationPage.secondattendeeemailtextbox.input("Mark.Wetzel@example.com");
-        eventRegistrationPage.confirmscreentermscheckbox.check();
+                        eventRegistrationPage.firstattendeeemailtextbox.input("amy.wetzel@example.com");
+                        eventRegistrationPage.secondattendeeemailtextbox.input("Mark.Wetzel@example.com");
+        eventRegistrationPage.confirmscreentermsbutton.safeClick();
         eventRegistrationPage.confirmscreencontinuebutton.safeClick();
         ConfirmationPage confirmationPage = new ConfirmationPage(driver);
 
