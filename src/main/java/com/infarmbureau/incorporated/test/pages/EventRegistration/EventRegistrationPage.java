@@ -2,9 +2,17 @@ package com.infarmbureau.incorporated.test.pages.EventRegistration;
 
 import com.infarmbureau.qa.elements.*;
 import com.infarmbureau.qa.pages.Page;
+import javafx.css.CssMetaData;
+import org.hibernate.mapping.Value;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import sun.awt.SunHints;
+
+import javax.xml.bind.Element;
+
+import java.lang.reflect.Type;
+import java.nio.channels.Selector;
 
 import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
@@ -178,13 +186,16 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbTextBox secondattendeeemailtextbox = new IfbTextBox(driver, secondattendeeemailElement);
 
-        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[3]/div/div/label/span[2]")
+        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[4]/div/div/label/span[2]")
         private WebElement confirmscreentermsElement;
+
         //*[@id="confirm-form"]/div[4]/div/div/label/span[2]
 
-        public IfbCheckBox confirmscreentermscheckbox = new IfbCheckBox(driver, confirmscreentermsElement);
+        //*[@id="confirm-form"]/div[4]/div/div/label/span[1]
 
-        @FindBy(xpath = "//*[@id=\"submitBtn\"]")
+        public IfbButton confirmscreentermsbutton = new IfbButton(driver, confirmscreentermsElement);
+
+        @FindBy(id = "submitBtn")
         private WebElement confirmscreencontinueElement;
 
         public IfbButton confirmscreencontinuebutton = new IfbButton(driver, confirmscreencontinueElement);
@@ -224,13 +235,13 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbTextBox guestbadgenametextbox = new IfbTextBox(driver, guestbadgenameElement);
 
-        @FindBy(xpath = "//*[@id=\"household-div\"]/div[5]/div[2]/input")
+        @FindBy(id = "submitBtn")
         private WebElement guestcontinue1Element;
 
-        public IfbLink guestcontinue1link = new IfbLink(driver, guestcontinue1Element);
+        public IfbButton guestcontinue1button = new IfbButton(driver, guestcontinue1Element);
 
-        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[3]")
-        private WebElement guesttermsElement;
+        @FindBy(id = "confirm-form")
+        private WebElement guesttermsElement; //*[@id="confirm-form"]/div[3]/div/div/label/span[2]
 
         public IfbCheckBox guesttermscheckbox = new IfbCheckBox(driver, guesttermsElement);
 

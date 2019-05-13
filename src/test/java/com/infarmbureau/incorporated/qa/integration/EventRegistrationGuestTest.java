@@ -23,7 +23,7 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
                         eventRegistrationPage.guestcontinuebutton.safeClick();
                         eventRegistrationPage.guestbadgenametextbox.clearTextBox();
                         eventRegistrationPage.guestbadgenametextbox.input("test");
-                        eventRegistrationPage.guestcontinue1link.safeClick();
+                        eventRegistrationPage.guestcontinue1button.safeClick();
                         eventRegistrationPage.guesttermscheckbox.check();
                         eventRegistrationPage.guestregisterlink.safeClick();
 
