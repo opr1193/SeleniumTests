@@ -4,6 +4,7 @@ package com.infarmbureau.incorporated.qa.integration;
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.ConfirmationPage;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.EventRegistrationPage;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 
@@ -13,7 +14,7 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void eventregistrationtest() {
         startEventReg();
         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
@@ -46,8 +47,8 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
         eventRegistrationPage.session8firstattendeecheckbox.check();
         eventRegistrationPage.session8secondattendeecheckbox.check();
         eventRegistrationPage.selectsessioncontinuebutton.safeClick();
-                        eventRegistrationPage.firstattendeeemailtextbox.input("amy.wetzel@example.com");
-                        eventRegistrationPage.secondattendeeemailtextbox.input("Mark.Wetzel@example.com");
+//                        eventRegistrationPage.firstattendeeemailtextbox.input("amy.wetzel@example.com");
+//                        eventRegistrationPage.secondattendeeemailtextbox.input("Mark.Wetzel@example.com");
         eventRegistrationPage.confirmscreentermsbutton.safeClick();
         eventRegistrationPage.confirmscreencontinuebutton.safeClick();
         ConfirmationPage confirmationPage = new ConfirmationPage(driver);

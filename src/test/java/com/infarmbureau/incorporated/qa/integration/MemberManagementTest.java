@@ -2,24 +2,24 @@ package com.infarmbureau.incorporated.qa.integration;
 
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
-import com.infarmbureau.incorporated.test.pages.EventRegistration.MemberManagementPage;
+import com.infarmbureau.sitefinity.test.pages.MemberManagement.MemberManagementPage;
 import org.junit.Ignore;
 import org.junit.Test;
 
 
 public class MemberManagementTest extends IfbIncorporatedTest {
 
-                    @Test
+                    @Ignore
                     public void membermanagementtest(){
                         startMemberMgt();
-                        MemberManagementPage memberManagementPage = new MemberManagementPage(driver);
+                        com.infarmbureau.sitefinity.test.pages.MemberManagement.MemberManagementPage memberManagementPage = new MemberManagementPage(driver);
                         memberManagementPage.eventsButton.safeClick();
 
                        memberManagementPage.neweventLink.safeClick();
 
-                       memberManagementPage.eventtitleTextField.input("Pumpkin");
+                       memberManagementPage.eventtitleTextField.input("Auto Event");
 
-                       memberManagementPage.hostnameTextField.input("Jason");
+                       memberManagementPage.hostnameTextField.input("Mark");
 
                        memberManagementPage.hostphoneTextField.input("3126547586");
 
@@ -67,11 +67,17 @@ public class MemberManagementTest extends IfbIncorporatedTest {
 
                        memberManagementPage.saveButton.safeClick();
 
+//e                       memberManagementPage.editButton.safeClick();
+//
+//                       memberManagementPage.editmaxattendeesTextField.clearTextBox();
+//
+//                       memberManagementPage.editmaxattendeesTextField.input("106");
+//
+//                       memberManagementPage.editsaveButton.safeClick();
+//
+//                       memberManagementPage.backtooverviewButton.safeClick();
+
                        System.out.println("hello");
-
-
-
-
                   }
     }
 

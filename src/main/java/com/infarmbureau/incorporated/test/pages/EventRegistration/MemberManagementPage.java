@@ -1,4 +1,4 @@
-package com.infarmbureau.incorporated.test.pages.EventRegistration;
+package com.infarmbureau.sitefinity.test.pages.MemberManagement;
 
 import com.infarmbureau.qa.elements.IfbButton;
 import com.infarmbureau.qa.elements.IfbLink;
@@ -98,10 +98,20 @@ public class MemberManagementPage extends Page {
     private WebElement enablewaitlistElement;
 
     @FindBy(xpath = "//*[@id=\"mat-dialog-0\"]/app-event-editor/form/div[3]/button/span")
-
     private WebElement saveElement;
 
-    //*[@id="mat-dialog-2"]/app-event-editor/form/div[3]/button/span
+    @FindBy(xpath = "/html/body/app-root/app-navigation-drawer/mat-sidenav-container/mat-sidenav-content/div/div/div/app-view-event/mat-card/mat-card-title/div/div/button[2]")
+    private WebElement editElement;
+
+    @FindBy(id = "mat-input-38")
+    private WebElement editmaxattendeesElement;
+
+    @FindBy(id = "mat-dialog-1")
+    private WebElement editsaveElement;
+
+    @FindBy(xpath = "/html/body/app-root/app-navigation-drawer/mat-sidenav-container/mat-sidenav-content/div/div/div/app-view-event/a")
+
+    private WebElement backtooverviewElement;
 
 
     public IfbButton eventsButton = new IfbButton(driver, eventsElement);
@@ -162,6 +172,13 @@ public class MemberManagementPage extends Page {
 
     public IfbButton saveButton = new IfbButton(driver, saveElement);
 
+    public IfbButton editButton = new IfbButton(driver, editElement);
+
+    public IfbTextBox editmaxattendeesTextField = new IfbTextBox(driver, editmaxattendeesElement);
+
+    public IfbButton editsaveButton = new IfbButton(driver, editsaveElement);
+
+    public IfbButton backtooverviewButton = new IfbButton(driver, backtooverviewElement);
 
     public MemberManagementPage(WebDriver driver) {
 

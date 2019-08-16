@@ -4,12 +4,13 @@ package com.infarmbureau.incorporated.qa.integration;
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.ConfirmationPage;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.EventRegistrationPage;
+import org.junit.Ignore;
 import org.junit.Test;
 
 
 public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 
-                    @Test
+                    @Ignore
                     public void eventregistrationtest(){
                         startEventReg();
                         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
