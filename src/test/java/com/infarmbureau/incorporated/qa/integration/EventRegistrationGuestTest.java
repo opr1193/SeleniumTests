@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 
-                    @Ignore
+                    @Test
                     public void eventregistrationtest(){
                         startEventReg();
                         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
