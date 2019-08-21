@@ -14,43 +14,54 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void eventregistrationtest() {
         startEventReg();
         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
 
-        eventRegistrationPage.memberfirstnametextbox.input("Mark");
-        eventRegistrationPage.memberlastnametextbox.input("Wetzel");
-        eventRegistrationPage.memberzipcodetextbox.input("47164");
-        eventRegistrationPage.membernumbertextbox.input("0002516746");
+        eventRegistrationPage.memberfirstnametextbox.input("Michael");
+        eventRegistrationPage.memberlastnametextbox.input("Taylor");
+        eventRegistrationPage.memberzipcodetextbox.input("47501");
+        eventRegistrationPage.membernumbertextbox.input("0002009802");
         eventRegistrationPage.membercontinuebutton.safeClick();
         eventRegistrationPage.firstattendingcheckbox.check();
         eventRegistrationPage.seconattendingcheckbox.check();
         eventRegistrationPage.firstfirsttimeattendingcheckbox.check();
+        eventRegistrationPage.firstpreferrednamecheckbox.check();
+        eventRegistrationPage.firstpreferrednametextbox.input("C Taylor");
+        eventRegistrationPage.firstsuperqualcheckbox.check();
         eventRegistrationPage.secondfirsttimeattendingcheckbox.check();
+        eventRegistrationPage.secondpreferrednamecheckbox.check();
+        eventRegistrationPage.secondpreferrednametextbox.input("Julie Taylor");
+        eventRegistrationPage.secondsuperqualcheckbox.check();
+//        eventRegistrationPage.memberadditionalhouseholdmemberbutton.safeClick();
+//        eventRegistrationPage.memberadditionalfirstnametextbox.input("Kathie");
+//        eventRegistrationPage.memberadditionallastnametextbox.input("Taylor");
+//        eventRegistrationPage.memberadditionalrelationdropdown.select("Child");
+//        eventRegistrationPage.memberadditionaladdbutton.safeClick();
+//        eventRegistrationPage.memberadditionalmembercheckbox.check();
+//        eventRegistrationPage.memberadditionalmemberfirsttimeattendingcheckbox.check();
+//        eventRegistrationPage.memberadditonalmemberpreferrednamecheckbox.check();
+//        eventRegistrationPage.memberadditionalmemberpreferrednametextbox.input("Kathie Taylor");
+//        eventRegistrationPage.memberadditionalsuperqualcheckbox.check();
         eventRegistrationPage.householdcontinuebutton.safeClick();
-        eventRegistrationPage.session1firstattendeegoingradiobutton.safeClick();
-        eventRegistrationPage.session1secondattendeegoingradiobutton.safeClick();
-        eventRegistrationPage.session2textboxbutton.safeClick();
-        eventRegistrationPage.session2textboxinputtextbox.input("0");
-        eventRegistrationPage.session3firstattendeegoingcheckbox.check();
-        eventRegistrationPage.session3secondattendeegoingcheckbox.check();
-        eventRegistrationPage.session4firstattendeegoingcheckbox.check();
-        eventRegistrationPage.session4secondattendeegoingcheckbox.check();
-        eventRegistrationPage.session5firstattendeegoingcheckbox.check();
-        eventRegistrationPage.session5secondattendeegoingcheckbox.check();
-        eventRegistrationPage.session6firstattendeenotgoingcheckbox.check();
-        eventRegistrationPage.session6secondattendeenotgoingcheckbox.check();
-        eventRegistrationPage.session7firstattendeegoingcheckbox.check();
-        eventRegistrationPage.session7secondattendeegoingcheckbox.check();
-        eventRegistrationPage.session8link.safeClick();
-        eventRegistrationPage.session8firstattendeecheckbox.check();
-        eventRegistrationPage.session8secondattendeecheckbox.check();
+        eventRegistrationPage.tsessionfirstattendeegoingradiobutton.safeClick();
+        eventRegistrationPage.tsessionsecondattendeegoingradiobutton.safeClick();
+//        eventRegistrationPage.tsessionthirdattendeegoingradiobutton.safeClick();
+        eventRegistrationPage.paidfunsessionbutton.safeClick();
+        eventRegistrationPage.paidfunsessionfirstattendingcheckbox.check();
+        eventRegistrationPage.paidfunsessionsecondattendingcheckbox.check();
+//        eventRegistrationPage.paidfunsessionthirdattendingcheckbox.check();
+        eventRegistrationPage.paidfunsessioncontributiontextbox.input("15");
+        eventRegistrationPage.testsessionbutton.safeClick();
+        eventRegistrationPage.testsessionfirstattendingcheckbox.check();
+        eventRegistrationPage.testsessionsecondattendingcheckbox.check();
+//        eventRegistrationPage.testsessionthirdattendingcheckbox.check();
         eventRegistrationPage.selectsessioncontinuebutton.safeClick();
-//                        eventRegistrationPage.firstattendeeemailtextbox.input("amy.wetzel@example.com");
-//                        eventRegistrationPage.secondattendeeemailtextbox.input("Mark.Wetzel@example.com");
         eventRegistrationPage.confirmscreentermsbutton.safeClick();
         eventRegistrationPage.confirmscreencontinuebutton.safeClick();
+
+
         ConfirmationPage confirmationPage = new ConfirmationPage(driver);
 
         assertEquals(confirmationPage.confirmationTextField.getText(), "YOUR CONFIRMATION NUMBER IS");
@@ -59,13 +70,17 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
         assertTrue(confirmationPage.confirmationNumber.isDisplayed());
 
 
-        String text = driver.findElement(By.xpath("//*[@id=\"kocontainer\"]/div/div/div[1]/div/div[2]/div[2]/div[1]/h2")).getText();
+        String text = driver.findElement(By.xpath("//*[@id=\"main\"]/div/div/div[1]/div[1]/div[1]/h2")).getText();
+
+        //*[@id=\"kocontainer\"]/div/div/div[1]/div/div[2]/div[2]/div[1]/h2
 
         startEventReg();
 
         eventRegistrationPage.updateregistrationlink.safeClick();
-//
+
         driver.findElement(By.xpath("//*[@id=\"ConfirmationNumber\"]")).sendKeys(text);
+
+
 
         eventRegistrationPage.updateregcontinuebutton.safeClick();
 
@@ -73,8 +88,7 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
         eventRegistrationPage.confirmcancelregistrationbutton.safeClick();
 
-       
-
+        assertEquals(confirmationPage.cancellationTextField.getText(),"Registration Cancelled");
 
 
 

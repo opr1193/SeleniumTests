@@ -206,6 +206,8 @@ public class AboutTest extends IfbIncorporatedTest {
         aboutPage.description.input("test");
         aboutPage.submit.safeClick();
 
+        driver.navigate().back();
+
 
         aboutPage.type.select("Ag in the Classroom (AITC)");
         aboutPage.firstname.input("Mark");
