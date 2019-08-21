@@ -225,10 +225,11 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbDropDown guestcountydropdown = new IfbDropDown(driver, guestcountyElement);
 
-        @FindBy(xpath = "//*[@id=\"button-row-div\"]/div/input")
+        @FindBy(xpath = "//*[@id=\"guestInfo\"]/form/div[4]/div/input")
         private WebElement guestcontinueElement;
 
-        public IfbButton guestcontinuebutton = new IfbButton(driver, guestcontinueElement);
+
+        public IfbLink guestcontinuelink = new IfbLink(driver, guestcontinueElement);
 
         @FindBy(xpath = "//*[@id=\"formContents\"]/div/div[2]/div/div[1]/label/span[2]")
         private WebElement guestfirsttimeattendingElement;
@@ -238,10 +239,10 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         @FindBy(xpath = "//*[@id=\"formContents\"]/div/div[2]/div/div[2]/label/span[2]")
         private WebElement guestbadgenamecheckElement;
 
-        public WebElement guestbadgenamecheckchekcbox = new IfbCheckBox(driver, guestbadgenamecheckElement);
+        public IfbCheckBox guestbadgenamecheckbox = new IfbCheckBox(driver, guestbadgenamecheckElement);
 
 
-        @FindBy(xpath = "//*[@id="Members_0__BadgeName"]")
+        @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
         private WebElement guestbadgenameElement;
 
         public IfbTextBox guestbadgenametextbox = new IfbTextBox(driver, guestbadgenameElement);
@@ -266,42 +267,135 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbTextBox guestaddhouseholdlastnametextbox = new IfbTextBox(driver, guestaddhouseholdlastnameElement);
 
+        @FindBy(xpath = "//*[@id=\"Relationship\"]")
+        private WebElement guestaddhouseholdrelationshipElement;
+
+        public IfbDropDown guestaddhouseholdrelationdropdown = new IfbDropDown(driver, guestaddhouseholdrelationshipElement);
 
 
+        @FindBy(xpath = "//*[@id=\"submitAdd\"]")
+        private WebElement guestaddhouseholdmemberElement;
 
+        public IfbButton guestaddhouseholdmemberbutton = new IfbButton(driver, guestaddhouseholdmemberElement);
 
-        @FindBy(id = "submitBtn")
-        private WebElement guestcontinue1Element;
+        @FindBy(xpath = "//*[@id=\"memberHolder\"]/div[2]/label/span")
+        private WebElement guestadditionalmember1Element;
 
-        public IfbButton guestcontinue1button = new IfbButton(driver, guestcontinue1Element);
+        public IfbCheckBox guestadditionalmember1checkbox = new IfbCheckBox(driver, guestadditionalmember1Element);
 
-        @FindBy(id = "confirm-form")
-        private WebElement guesttermsElement; //*[@id="confirm-form"]/div[3]/div/div/label/span[2]
+        @FindBy(xpath = "//*[@id=\"memberHolder\"]/div[2]/div[2]/div/div[1]/label/span[2]")
+        private WebElement guestadditionalmember1firsttimeattendingElement;
 
-        public IfbCheckBox guesttermscheckbox = new IfbCheckBox(driver, guesttermsElement);
+        public IfbCheckBox guestadditionalmember1firsttimeattendingcheckbox = new IfbCheckBox(driver, guestadditionalmember1firsttimeattendingElement);
+
+        @FindBy(xpath = "//*[@id=\"memberHolder\"]/div[2]/div[2]/div/div[2]/label/span[2]")
+        private WebElement guestadditionalmember1preferrednameElement;
+
+        public IfbCheckBox guestadditionalmember1preferrednamecheckbox = new IfbCheckBox(driver, guestadditionalmember1preferrednameElement);
+
+        @FindBy(xpath = "//*[@id=\"Members_1__BadgeName\"]")
+        private WebElement guestadditionalmember1preferrednametextboxElement;
+
+        public IfbTextBox guestadditionalmember1preferrednametextbox = new IfbTextBox(driver, guestadditionalmember1preferrednametextboxElement);
+
+        @FindBy(xpath = "//*[@id=\"memberHolder\"]/div[2]/div[2]/div/div[3]/label/span[2]")
+        private WebElement guestadditionalmember1superqualElement;
+
+        public IfbCheckBox guestadditionalmmember1superqualcheckbox = new IfbCheckBox(driver, guestadditionalmember1superqualElement);
 
         @FindBy(xpath = "//*[@id=\"submitBtn\"]")
-        private WebElement guestregisterElement;
+        private WebElement guesthouseholdsubmitElement;
 
-        public IfbLink guestregisterlink = new IfbLink(driver, guestregisterElement);
+        public IfbButton guesthouseholdsubmitbutton = new IfbButton(driver, guesthouseholdsubmitElement);
 
-        @FindBy(xpath = "//*[@id=\"main\"]/div/div/div/div/div/div[3]/p/a")
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[3]/div/div[1]/div[3]/div[2]/div[2]/label[1]/span")
+        private WebElement guesttsessiongoingElement;
+
+        public IfbCheckBox guesttsessiongoingcheckbox = new IfbCheckBox(driver, guesttsessiongoingElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[3]/div/div[1]/div[3]/div[2]/div[3]/label[1]/span")
+        private WebElement guestadditionalmember1tsessiongoingElement;
+
+        public IfbCheckBox guestadditionalmember1tsessiongoingcheckbox = new IfbCheckBox(driver, guestadditionalmember1tsessiongoingElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/div/span")
+        private WebElement guestpaidfunsessionElement;
+
+        public IfbCheckBox guestpaidfunsessioncheckbox = new IfbCheckBox(driver, guestpaidfunsessionElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[3]/div[2]/div[2]/label/span[2]")
+        private WebElement guestpaidfunsessiongoingElement;
+
+        public IfbCheckBox guestpaidfunsessiongoingcheckbox = new IfbCheckBox(driver, guestpaidfunsessiongoingElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[3]/div[2]/div[3]/label/span[2]")
+        private WebElement guestadditionalmember1paidfunsessiongoingElement;
+
+        public IfbCheckBox guestadditionalmember1paidfunsessiongoingcheckbox = new IfbCheckBox(driver, guestadditionalmember1tsessiongoingElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[3]/div[2]/div[5]/div/div[1]/input")
+        private WebElement guestpaidfunsessioncontributionElement;
+
+        public IfbTextBox guestpaidfunsessioncontributiontextbox = new IfbTextBox(driver, guestpaidfunsessioncontributionElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[4]/h5[2]/div/span")
+        private WebElement guesttestsessionElement;
+
+        public IfbCheckBox guesttestsessioncheckbox = new IfbCheckBox(driver, guesttestsessionElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[3]/div[2]/div[2]/label/span[2]")
+        private WebElement guesttestsessiongoingElement;
+
+        public IfbCheckBox guesttestsessiongoingcheckbox = new IfbCheckBox(driver, guesttestsessiongoingElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[3]/div[2]/div[3]/label/span[2]")
+        private WebElement guestadditionalmember1testsessiongoingElement;
+
+        public IfbCheckBox guestadditionalmember1testsessiongoingcheckbox = new IfbCheckBox(driver, guestadditionalmember1testsessiongoingElement);
+
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[8]/div[2]/input")
+        private WebElement guestsessionsubmitElement;
+
+        public IfbButton guestsessionsubmitbutton = new IfbButton(driver, guestsessionsubmitElement);
+
+        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[3]/div/div/label/span[2]")
+        private WebElement guestconfirmtermsElement;
+
+        public IfbCheckBox guestconfirmtermsccheckbox = new IfbCheckBox(driver, guestconfirmtermsElement);
+
+        @FindBy(xpath = "//*[@id=\"submitBtn\"]")
+        private WebElement guestconfirmsubmitElement;
+
+        public IfbButton guestconfirmsubmitbutton = new IfbButton(driver, guestconfirmsubmitElement);
+
+
+
+        @FindBy(xpath = "//*[@id=\"main\"]/div/div/div/div/div/div[4]/p/a")
         private WebElement updateregistrationElement;
 
         public IfbLink updateregistrationlink = new IfbLink(driver, updateregistrationElement);
+
+        @FindBy(id = "ConfirmationNumber")
+        private WebElement confirmationnumberElement;
+
+        public IfbTextBox confirmationnumbettextbox = new IfbTextBox(driver, confirmationnumberElement);
 
         @FindBy(xpath = "//*[@id=\"koconf\"]/div[2]/div[2]/input")
         private WebElement updateregcontinueElement;
 
         public IfbButton updateregcontinuebutton = new IfbButton(driver, updateregcontinueElement);
 
-        @FindBy(xpath = "//*[@id=\"household-div\"]/div[5]/div[1]/a[2]")
+        @FindBy(xpath = "//*[@id=\"household-div\"]/div[4]/div[1]/a[2]")
+
+        //*[@id="household-div"]/div[5]/div[1]/a[2]
         private WebElement cancelregistrationElement;
 
 
         public IfbButton cancelregistrationbutton = new IfbButton(driver, cancelregistrationElement);
 
         @FindBy(xpath = "//*[@id=\"cancelpopup\"]/div/div[3]/a[2]")
+        //*[@id="cancelpopup"]/div/div[3]/a[2]
+
         private WebElement confirmcancelregistrationElement;
 
         public IfbButton confirmcancelregistrationbutton = new IfbButton(driver, confirmcancelregistrationElement);

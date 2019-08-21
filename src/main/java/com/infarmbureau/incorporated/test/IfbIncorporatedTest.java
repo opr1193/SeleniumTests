@@ -25,7 +25,7 @@ public class IfbIncorporatedTest extends DriverTemplate {
   }
 
   protected final void startEventReg() {
-    driver.navigate().to("https://app-qa.infarmbureau.org/EventRegistration?event=3");
+    driver.navigate().to("https://app-qa.infarmbureau.org/EventRegistration?event=121");
 
   }
 protected final void startMemberMgt()  {
