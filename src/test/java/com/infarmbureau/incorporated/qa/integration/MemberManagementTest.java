@@ -17,9 +17,9 @@ public class MemberManagementTest extends IfbIncorporatedTest {
 
                        memberManagementPage.neweventLink.safeClick();
 
-                       memberManagementPage.eventtitleTextField.input("Auto Event");
+                       memberManagementPage.eventtitleTextField.input("Farm Event");
 
-                       memberManagementPage.hostnameTextField.input("Mark");
+                       memberManagementPage.hostnameTextField.input("Tony Stark");
 
                        memberManagementPage.hostphoneTextField.input("3126547586");
 
@@ -78,7 +78,7 @@ public class MemberManagementTest extends IfbIncorporatedTest {
 
                        memberManagementPage.qualifiersbutton.safeClick();
 
-                       memberManagementPage.qualifierTextField.input("Qualifier Test");
+                       memberManagementPage.qualifierTextField.input("Stark Fans");
 
                        memberManagementPage.addqualifierButton.safeClick();
 
