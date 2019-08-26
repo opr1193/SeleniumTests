@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 
 public class AboutTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void aboutTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
@@ -205,6 +205,8 @@ public class AboutTest extends IfbIncorporatedTest {
         aboutPage.emailinput.input("Mark.Wetzel@example.com");
         aboutPage.description.input("test");
         aboutPage.submit.safeClick();
+
+        driver.navigate().back();
 
 
         aboutPage.type.select("Ag in the Classroom (AITC)");
