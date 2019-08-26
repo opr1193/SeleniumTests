@@ -238,10 +238,10 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         @FindBy(xpath = "//*[@id=\"formContents\"]/div/div[2]/div/div[2]/label/span[2]")
         private WebElement guestbadgenamecheckElement;
 
-        public WebElement guestbadgenamecheckchekcbox = new IfbCheckBox(driver, guestbadgenamecheckElement);
+        public IfbCheckBox guestbadgenamecheckbox = new IfbCheckBox(driver, guestbadgenamecheckElement);
 
 
-        @FindBy(xpath = "//*[@id="Members_0__BadgeName"]")
+        @FindBy(id = "Members_0__BadgeName")
         private WebElement guestbadgenameElement;
 
         public IfbTextBox guestbadgenametextbox = new IfbTextBox(driver, guestbadgenameElement);

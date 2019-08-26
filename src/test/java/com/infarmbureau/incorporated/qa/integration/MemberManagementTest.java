@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class MemberManagementTest extends IfbIncorporatedTest {
 
-                    @Ignore
+                    @Test
                     public void membermanagementtest(){
                         startMemberMgt();
                         com.infarmbureau.sitefinity.test.pages.MemberManagement.MemberManagementPage memberManagementPage = new MemberManagementPage(driver);
@@ -29,8 +29,6 @@ public class MemberManagementTest extends IfbIncorporatedTest {
 
                        memberManagementPage.bannerimageTextField.input("https://www.pexels.com/search/nature/");
 
-                       memberManagementPage.attendancecostTextField.input("100");
-
                        memberManagementPage.venuedescriptionTextField.input("State Fair");
 
                        memberManagementPage.addressdescriptionTextField.input("Indianapolis");
@@ -42,6 +40,11 @@ public class MemberManagementTest extends IfbIncorporatedTest {
                        memberManagementPage.stateTextField.input("IN");
 
                        memberManagementPage.zipcodeTextField.input("46038");
+
+                       memberManagementPage.countyTextField.input("Hamilton");
+
+
+
 
 //                       memberManagementPage.startdateButton.safeClick();
 //
@@ -64,6 +67,35 @@ public class MemberManagementTest extends IfbIncorporatedTest {
                        memberManagementPage.maximumattendeesTextField.input("50");
 
                        memberManagementPage.enablewaitlistButton.safeClick();
+
+                       memberManagementPage.paymentsectionButton.safeClick();
+
+                       memberManagementPage.basecostTextField.input("50");
+
+                       memberManagementPage.costdescriptionTextField.input("$25/ person for members, $50/person for non-members");
+
+//                       memberManagementPage.payeedropdown.select("Indiana Farm Bureau Inc.");
+
+                       memberManagementPage.qualifiersbutton.safeClick();
+
+                       memberManagementPage.qualifierTextField.input("Qualifier Test");
+
+                       memberManagementPage.addqualifierButton.safeClick();
+
+                       memberManagementPage.discountButton.safeClick();
+
+                       memberManagementPage.discountselectionButton.safeClick();
+
+                       memberManagementPage.discountamountTextField.input("10");
+
+                       memberManagementPage.engagementselectionButton.safeClick();
+
+                       memberManagementPage.selectengagementButton.safeClick();
+
+                       memberManagementPage.selectengagement1Button.safeClick();
+
+                       memberManagementPage.acceptselectionButton.safeClick();
+
 
                        memberManagementPage.saveButton.safeClick();
 
