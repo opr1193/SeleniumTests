@@ -92,7 +92,7 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
 
 
-        System.out.println("hello");
+//        System.out.println("hello");
 
 
     }
