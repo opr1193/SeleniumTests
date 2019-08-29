@@ -290,11 +290,9 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         public IfbCheckBox guestbadgenamecheckbox = new IfbCheckBox(driver, guestbadgenamecheckElement);
 
 
-<<<<<<< HEAD
-        @FindBy(id = "Members_0__BadgeName")
-=======
+
         @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
->>>>>>> bf40a006d42ef90b929c178e1b2d83d634ae9ed8
+
         private WebElement guestbadgenameElement;
 
         public IfbTextBox guestbadgenametextbox = new IfbTextBox(driver, guestbadgenameElement);
