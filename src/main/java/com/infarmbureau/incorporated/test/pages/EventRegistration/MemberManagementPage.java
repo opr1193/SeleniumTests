@@ -25,6 +25,9 @@ public class MemberManagementPage<IfbCheckbox> extends Page {
     @FindBy(xpath = "/html/body/app-root/app-navigation-drawer/mat-sidenav-container/mat-sidenav-content/div/div/div/app-event-list/app-floating-action-button/div/button/span/mat-icon")
     private WebElement neweventElement;
 
+    @FindBy(xpath = "//*[@id=\"mat-slide-toggle-2\"]/label/div/div/div[1]")
+    private WebElement activeeventElement;
+
     @FindBy(xpath = "//*[@id=\"mat-input-6\"]")
     private WebElement eventtitleElement;
 
@@ -117,8 +120,11 @@ public class MemberManagementPage<IfbCheckbox> extends Page {
     @FindBy(xpath = "//*[@id=\"mat-input-22\"]")
     private WebElement costdescriptionElement;
 
-    @FindBy(id = "mat-select-4")
+    @FindBy(xpath = "//*[@id=\"mat-select-5\"]/div/div[1]/span")
     private WebElement payeeElement;
+
+    @FindBy(xpath = "//*[@id=\"mat-option-897\"]/span")
+    private WebElement payeeselectionElement;
 
     @FindBy(xpath = "//*[@id=\"cdk-accordion-child-3\"]/div/section[3]/app-qualifier-editor/div/a/span/mat-icon")
     private WebElement qualifiersElement;
@@ -147,7 +153,7 @@ public class MemberManagementPage<IfbCheckbox> extends Page {
     @FindBy(xpath = "//*[@id=\"cdk-accordion-child-3\"]/div/section[4]/app-discount-editor/div[1]/a/span/mat-icon")
     private WebElement discountElement;
 
-    @FindBy(xpath = "//*[@id=\"cdk-overlay-8\"]/div/div/a[5]")
+    @FindBy(xpath = "//*[@id=\"cdk-overlay-9\"]/div/div/a[1]")
     private WebElement discountselectionElement;
 
     @FindBy(xpath = "//*[@id=\"mat-input-29\"]")
@@ -173,6 +179,8 @@ public class MemberManagementPage<IfbCheckbox> extends Page {
     public IfbButton incmembershipButton = new IfbButton(driver, incmembershipElement);
 
     public IfbLink neweventLink = new IfbLink(driver, neweventElement);
+
+    public IfbButton activeeventButton = new IfbButton(driver, activeeventElement);
 
     public IfbTextBox eventtitleTextField = new IfbTextBox(driver, eventtitleElement);
 
@@ -234,7 +242,9 @@ public class MemberManagementPage<IfbCheckbox> extends Page {
 
     public IfbTextBox costdescriptionTextField = new IfbTextBox(driver, costdescriptionElement);
 
-    public IfbDropDown payeedropdown = new IfbDropDown(driver, payeeElement);
+    public IfbTextBox payeeTextField = new IfbTextBox(driver, payeeElement);
+
+    public IfbButton payeeselectionButton = new IfbButton(driver, payeeselectionElement);
 
     public IfbButton qualifiersbutton = new IfbButton(driver, qualifiersElement);
 
