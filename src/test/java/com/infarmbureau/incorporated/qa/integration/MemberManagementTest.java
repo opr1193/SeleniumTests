@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class MemberManagementTest extends IfbIncorporatedTest {
 
-   @Test
+   @Ignore
    public void membermanagementtest() {
       startMemberMgt();
       com.infarmbureau.sitefinity.test.pages.MemberManagement.MemberManagementPage memberManagementPage = new MemberManagementPage(driver);
