@@ -23,6 +23,7 @@ public class MemberManagementPage<IfbCheckbox> extends Page {
     private WebElement incmembershipElement;
 
     @FindBy(xpath = "/html/body/app-root/app-navigation-drawer/mat-sidenav-container/mat-sidenav-content/div/div/div/app-event-list/app-floating-action-button/div/button/span/mat-icon")
+
     private WebElement neweventElement;
 
     @FindBy(xpath = "//*[@id=\"mat-slide-toggle-2\"]/label/div/div/div[1]")
@@ -123,7 +124,7 @@ public class MemberManagementPage<IfbCheckbox> extends Page {
     @FindBy(xpath = "//*[@id=\"mat-select-5\"]/div/div[1]/span")
     private WebElement payeeElement;
 
-    @FindBy(xpath = "//*[@id=\"mat-option-897\"]/span")
+    @FindBy(xpath = "//*[@id=\"mat-option-899\"]/span")
     private WebElement payeeselectionElement;
 
     @FindBy(xpath = "//*[@id=\"cdk-accordion-child-3\"]/div/section[3]/app-qualifier-editor/div/a/span/mat-icon")

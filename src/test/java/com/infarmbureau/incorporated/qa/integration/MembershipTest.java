@@ -26,7 +26,6 @@ public class MembershipTest extends IfbIncorporatedTest {
         membershipPage.countyfarmbureaulink.safeClick();
 
         homePage.membershiplink.safeClick();
-
         membershipPage.infbexpertlink.safeClick();
 
         membershipPage.infbinsurancelink.safeClick();
@@ -45,6 +44,7 @@ public class MembershipTest extends IfbIncorporatedTest {
 
        /* LogoutPage logoutPage = new LogoutPage(driver);
         assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");*/
+
 
 
     }

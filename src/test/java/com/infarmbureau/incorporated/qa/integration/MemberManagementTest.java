@@ -2,6 +2,7 @@ package com.infarmbureau.incorporated.qa.integration;
 
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
+import com.infarmbureau.incorporated.test.pages.EventRegistration.EventRegistrationPage;
 import com.infarmbureau.sitefinity.test.pages.MemberManagement.MemberManagementPage;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -9,11 +10,17 @@ import org.junit.Test;
 
 public class MemberManagementTest extends IfbIncorporatedTest {
 
-   @Ignore
+   @Test
    public void membermanagementtest() {
       startMemberMgt();
-      com.infarmbureau.sitefinity.test.pages.MemberManagement.MemberManagementPage memberManagementPage = new MemberManagementPage(driver);
-      memberManagementPage.eventsButton.safeClick();
+      MemberManagementPage  memberManagementPage = new MemberManagementPage(driver);
+
+
+      memberManagementPage.eventsButton.waitForElementToBeVisible(40);
+
+     memberManagementPage.eventsButton.safeClick();
+
+      memberManagementPage.neweventLink.waitForElementToBeVisible(100);
 
       memberManagementPage.neweventLink.safeClick();
 
