@@ -290,11 +290,9 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         public IfbCheckBox guestbadgenamecheckbox = new IfbCheckBox(driver, guestbadgenamecheckElement);
 
 
-<<<<<<< HEAD
-        @FindBy(id = "Members_0__BadgeName")
-=======
+        //@FindBy(id = "Members_0__BadgeName")
+
         @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
->>>>>>> bf40a006d42ef90b929c178e1b2d83d634ae9ed8
         private WebElement guestbadgenameElement;
 
         public IfbTextBox guestbadgenametextbox = new IfbTextBox(driver, guestbadgenameElement);
@@ -370,10 +368,10 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbCheckBox guestadditionalmember1tsessiongoingcheckbox = new IfbCheckBox(driver, guestadditionalmember1tsessiongoingElement);
 
-        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/div/span")
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]/span")
         private WebElement guestpaidfunsessionElement;
 
-        public IfbCheckBox guestpaidfunsessioncheckbox = new IfbCheckBox(driver, guestpaidfunsessionElement);
+        public IfbButton guestpaidfunsessionbutton = new IfbButton(driver, guestpaidfunsessionElement);
 
         @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[3]/div[2]/div[2]/label/span[2]")
         private WebElement guestpaidfunsessiongoingElement;
@@ -390,10 +388,10 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbTextBox guestpaidfunsessioncontributiontextbox = new IfbTextBox(driver, guestpaidfunsessioncontributionElement);
 
-        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[4]/h5[2]/div/span")
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[4]/h5[2]/span[1]/span")
         private WebElement guesttestsessionElement;
 
-        public IfbCheckBox guesttestsessioncheckbox = new IfbCheckBox(driver, guesttestsessionElement);
+        public IfbButton guesttestsessionbutton = new IfbButton(driver, guesttestsessionElement);
 
         @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[3]/div[2]/div[2]/label/span[2]")
         private WebElement guesttestsessiongoingElement;
@@ -432,18 +430,23 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbTextBox confirmationnumbettextbox = new IfbTextBox(driver, confirmationnumberElement);
 
-        @FindBy(xpath = "//*[@id=\"koconf\"]/div[2]/div[2]/input")
+        @FindBy(xpath = "//*[@id=\"update-form\"]/div[2]/div[2]/input")
         private WebElement updateregcontinueElement;
 
         public IfbButton updateregcontinuebutton = new IfbButton(driver, updateregcontinueElement);
 
         @FindBy(xpath = "//*[@id=\"household-div\"]/div[4]/div[1]/a[2]")
+        //*[@id="household-div"]/div[4]/div[1]/a[2]
+        //*[@id="update-form"]/div[2]/div[2]/input
+
+
 
         //*[@id="household-div"]/div[5]/div[1]/a[2]
         private WebElement cancelregistrationElement;
 
 
         public IfbButton cancelregistrationbutton = new IfbButton(driver, cancelregistrationElement);
+
 
         @FindBy(xpath = "//*[@id=\"cancelpopup\"]/div/div[3]/a[2]")
         //*[@id="cancelpopup"]/div/div[3]/a[2]
