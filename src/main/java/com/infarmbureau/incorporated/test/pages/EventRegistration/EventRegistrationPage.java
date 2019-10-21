@@ -290,9 +290,15 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         public IfbCheckBox guestbadgenamecheckbox = new IfbCheckBox(driver, guestbadgenamecheckElement);
 
 
+<<<<<<< HEAD
         //@FindBy(id = "Members_0__BadgeName")
 
         @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
+=======
+
+        @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
+
+>>>>>>> master
         private WebElement guestbadgenameElement;
 
         public IfbTextBox guestbadgenametextbox = new IfbTextBox(driver, guestbadgenameElement);
@@ -368,7 +374,11 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbCheckBox guestadditionalmember1tsessiongoingcheckbox = new IfbCheckBox(driver, guestadditionalmember1tsessiongoingElement);
 
+<<<<<<< HEAD
         @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]/span")
+=======
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[3]/div[2]/div[2]/label/span[2]")
+>>>>>>> master
         private WebElement guestpaidfunsessionElement;
 
         public IfbButton guestpaidfunsessionbutton = new IfbButton(driver, guestpaidfunsessionElement);
