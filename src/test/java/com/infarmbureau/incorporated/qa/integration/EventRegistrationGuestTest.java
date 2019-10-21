@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 
                     @Test
-                    public void eventregistrationtest(){
+                    public void eventRegistrationTest(){
                         startEventReg();
                         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
                         eventRegistrationPage.guestlink.safeClick();
@@ -79,7 +79,7 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 
                         assertEquals(confirmationPage.cancellationTextField.getText(),"Registration Cancelled");
 
-//                        System.out.println("hello");
+                        //System.out.println("hello");
 
 
 
