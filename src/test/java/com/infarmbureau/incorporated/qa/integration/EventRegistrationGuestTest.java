@@ -79,7 +79,7 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 
                         assertEquals(confirmationPage.cancellationTextField.getText(),"Registration Cancelled");
 
-//                        System.out.println("hello");
+                        System.out.println("hello");
 
 
 
