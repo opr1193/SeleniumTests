@@ -291,6 +291,7 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         //@FindBy(id = "Members_0__BadgeName")
 
         @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
@@ -298,6 +299,16 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
 
+>>>>>>> master
+=======
+
+        @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
+
+=======
+        //@FindBy(id = "Members_0__BadgeName")
+
+        @FindBy(xpath = "//*[@id=\"Members_0__BadgeName\"]")
+>>>>>>> c59a27670428851fe69594b10b199be50f4cb935
 >>>>>>> master
         private WebElement guestbadgenameElement;
 
@@ -375,9 +386,16 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         public IfbCheckBox guestadditionalmember1tsessiongoingcheckbox = new IfbCheckBox(driver, guestadditionalmember1tsessiongoingElement);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]/span")
 =======
         @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[3]/div[2]/div[2]/label/span[2]")
+>>>>>>> master
+=======
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[3]/div[2]/div[2]/label/span[2]")
+=======
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]/span")
+>>>>>>> c59a27670428851fe69594b10b199be50f4cb935
 >>>>>>> master
         private WebElement guestpaidfunsessionElement;
 
