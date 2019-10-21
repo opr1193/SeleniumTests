@@ -33,6 +33,7 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
                         eventRegistrationPage.guestaddhouseholdlastnametextbox.input("Balakrishna");
                         eventRegistrationPage.guestaddhouseholdrelationdropdown.select("Spouse");
                         eventRegistrationPage.guestaddhouseholdmemberbutton.safeClick();
+                        eventRegistrationPage.guestadditionalmember1checkbox.waitForElementToBeVisible(30);
                         eventRegistrationPage.guestadditionalmember1checkbox.check();
                         eventRegistrationPage.guestadditionalmember1firsttimeattendingcheckbox.check();
                         eventRegistrationPage.guestadditionalmember1preferrednamecheckbox.check();
@@ -41,11 +42,11 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
                         eventRegistrationPage.guesthouseholdsubmitbutton.safeClick();
                         eventRegistrationPage.guesttsessiongoingcheckbox.check();
                         eventRegistrationPage.guestadditionalmember1tsessiongoingcheckbox.check();
-                        eventRegistrationPage.guestpaidfunsessioncheckbox.check();
+                        eventRegistrationPage.guestpaidfunsessionbutton.safeClick();
                         eventRegistrationPage.guestpaidfunsessiongoingcheckbox.check();
                         eventRegistrationPage.guestadditionalmember1paidfunsessiongoingcheckbox.check();
                         eventRegistrationPage.guestpaidfunsessioncontributiontextbox.input("10");
-                        eventRegistrationPage.guesttestsessioncheckbox.check();
+                        eventRegistrationPage.guesttestsessionbutton.safeClick();
                         eventRegistrationPage.guesttestsessiongoingcheckbox.check();
                         eventRegistrationPage.guestadditionalmember1testsessiongoingcheckbox.check();
                         eventRegistrationPage.guestsessionsubmitbutton.safeClick();
