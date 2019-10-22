@@ -174,8 +174,15 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         public IfbRadioButton tsessionthirdattendeegoingradiobutton = new IfbRadioButton(driver, tsessionthirdattendeegoingElement);
 
 
+<<<<<<< HEAD
         @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]/span")
+=======
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]")
+
+        //*[@id="step5-form"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]
+>>>>>>> master
         private WebElement paidfunsessionElement;//*[@id="step5-form"]/div[3]/div[1]/div[4]/h5[2]/div/span
+
 
         public IfbButton paidfunsessionbutton = new IfbButton(driver, paidfunsessionElement);
 
