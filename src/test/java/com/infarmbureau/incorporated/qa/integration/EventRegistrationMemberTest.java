@@ -14,7 +14,7 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void eventregistrationtest() {
         startEventReg();
         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
@@ -92,7 +92,7 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
 
 
-       System.out.println("hello");
+       //System.out.println("hello");
 
 
     }
