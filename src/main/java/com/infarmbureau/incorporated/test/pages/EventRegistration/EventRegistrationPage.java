@@ -174,8 +174,24 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
         public IfbRadioButton tsessionthirdattendeegoingradiobutton = new IfbRadioButton(driver, tsessionthirdattendeegoingElement);
 
 
-        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/div")
+<<<<<<< HEAD
+<<<<<<< HEAD
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]")
+
+        //*[@id="step5-form"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]
+=======
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]/span")
+>>>>>>> 3c4be504ba3e2e4b5bf8f590614397d0d511f8cc
+=======
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]/span")
+=======
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]")
+
+        //*[@id="step5-form"]/div[6]/div/div[1]/div[4]/h5[2]/span[1]
+>>>>>>> master
+>>>>>>> 791fac429c99950434d2910cc357781d99089e26
         private WebElement paidfunsessionElement;//*[@id="step5-form"]/div[3]/div[1]/div[4]/h5[2]/div/span
+
 
         public IfbButton paidfunsessionbutton = new IfbButton(driver, paidfunsessionElement);
 
@@ -199,7 +215,7 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbTextBox paidfunsessioncontributiontextbox = new IfbTextBox(driver, paidfunsessioncontributionElement);
 
-        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[4]/h5[2]/div")
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[4]/h5[2]/span[1]")
         private WebElement testsessionElement;
 
         public IfbButton testsessionbutton = new IfbButton(driver, testsessionElement);
