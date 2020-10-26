@@ -226,6 +226,8 @@ public class AboutTest extends IfbIncorporatedTest {
 
         LogoutPage logoutPage = new LogoutPage(driver);
         assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
+        System.out.println("hello");
+
 
     }
 }
