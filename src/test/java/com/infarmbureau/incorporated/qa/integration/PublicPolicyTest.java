@@ -5,19 +5,20 @@ import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
 import com.infarmbureau.incorporated.test.pages.LogoutPage;
 import com.infarmbureau.incorporated.test.pages.PublicPolicy.PublicPolicyPage;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class PublicPolicyTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void publicpolicyTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.usernameTextField.input("Markwetzel");
         loginPage.passwordTextField.input("testing15");
-        loginPage.loginButton.safeClick();
+        loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
         homePage.publicpolicylink.safeClick();

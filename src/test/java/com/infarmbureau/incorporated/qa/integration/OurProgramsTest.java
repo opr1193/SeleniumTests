@@ -5,18 +5,19 @@ import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
 import com.infarmbureau.incorporated.test.pages.LogoutPage;
 import com.infarmbureau.incorporated.test.pages.OurPrograms.OurProgramsPage;
+import org.junit.Ignore;
 import org.junit.Test;
 
 public class OurProgramsTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void ourprogramsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.usernameTextField.input("Markwetzel");
         loginPage.passwordTextField.input("testing15");
-        loginPage.loginButton.waitForElementToBeVisible(10);
-        loginPage.loginButton.safeClick();
+        loginPage.loginLink.waitForElementToBeVisible(10);
+        loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
         homePage.ourprogramslink.safeClick();

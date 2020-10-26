@@ -5,20 +5,20 @@ import com.infarmbureau.incorporated.test.pages.AboutPage;
 import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
 import com.infarmbureau.incorporated.test.pages.LogoutPage;
-import org.junit.Ignore;
 import org.junit.Test;
-
-import static org.junit.Assert.assertEquals;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class AboutTest extends IfbIncorporatedTest {
 
     @Test
-    public void aboutTest() {
+    public void aboutTest() throws InterruptedException {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Markwetzel");
+        loginPage.usernameTextField.input("Annette");
         loginPage.passwordTextField.input("testing15");
-        loginPage.loginButton.safeClick();
+        loginPage.loginLink.safeClick();
 
         AboutPage aboutPage = new AboutPage(driver);
 
@@ -44,7 +44,7 @@ public class AboutTest extends IfbIncorporatedTest {
 
         aboutPage.youngfarmerslink.safeClick();
 
-        aboutPage.stateyounglink.safeClick();
+//        aboutPage.stateyounglink.safeClick();
 
         aboutPage.collegiatelink.safeClick();
 
@@ -68,41 +68,43 @@ public class AboutTest extends IfbIncorporatedTest {
 
         aboutPage.marketinglink.safeClick();
 
-        aboutPage.regionallink.safeClick();
-
-        aboutPage.countylink.safeClick();
-
-        aboutPage.historylink.safeClick();
-
-        aboutPage.ifbhundredlink.safeClick();
-
         aboutPage.aboutlink.safeClick();
 
+//        aboutPage.regionallink.safeClick();
+//
+        aboutPage.countylink.safeClick();
+//
+        aboutPage.historylink.safeClick();
+//
+//        aboutPage.ifbhundredlink.safeClick();
+
+//        aboutPage.aboutlink.safeClick();
+
         aboutPage.historyonelink.safeClick();
+        driver.navigate().back();
+
 
         aboutPage.ifbadvocacylink.safeClick();
+        driver.navigate().back();
 
-        aboutPage.aboutlink.safeClick();
 
-        aboutPage.historyonelink.safeClick();
 
         aboutPage.ifbwomenlink.safeClick();
 
-        aboutPage.aboutlink.safeClick();
+        driver.navigate().back();
 
-        aboutPage.historyonelink.safeClick();
 
         aboutPage.ifbyouthlink.safeClick();
 
-        aboutPage.aboutlink.safeClick();
+        driver.navigate().back();
 
-        aboutPage.historyonelink.safeClick();
+        aboutPage.datesofinclink.safeClick();
 
         aboutPage.ifbpastlink.safeClick();
 
         aboutPage.aboutlink.safeClick();
 
-        /*aboutPage.careerslink.safeClick();*/
+        //aboutPage.careerslink.safeClick()
 
 
 
@@ -111,123 +113,210 @@ public class AboutTest extends IfbIncorporatedTest {
         aboutPage.contactlink.safeClick();
         aboutPage.contactuslink.safeClick();
 
-        aboutPage.type.select("Member Benefits");
+        aboutPage.type.safeClick();
+        WebElement contactuslistelement = driver.findElement(By.xpath("/html/body/div[9]/ul"));
+        Actions contactuslistaction = new Actions(driver);
+        contactuslistaction.moveToElement(contactuslistelement).build().perform();
+        Thread.sleep(1000);
+        WebElement paymembershipelement = driver.findElement(By.xpath("/html/body/div[9]/ul/li[2]"));
+        Actions paymembershipaction = new Actions(driver);
+        paymembershipaction.moveToElement(paymembershipelement).build().perform();
+        paymembershipelement.click();
 
-
-        aboutPage.type.select("Pay Membership");
-
-        aboutPage.type.select("Join INFB");
+        aboutPage.type.safeClick();
+        contactuslistaction.moveToElement(contactuslistelement).build().perform();
+        Thread.sleep(1000);
+        WebElement joininfbelement = driver.findElement(By.xpath("/html/body/div[9]/ul/li[3]"));
+        Actions joininfbaction = new Actions(driver);
+        joininfbaction.moveToElement(joininfbelement).build().perform();
+        joininfbelement.click();
         aboutPage.firstname.input("Mark");
         aboutPage.lastname.input("Wetzel");
-        aboutPage.contacted.select("Email");
+        aboutPage.contacted.safeClick();
+        WebElement prefcontelement = driver.findElement(By.xpath("/html/body/div[12]/ul"));
+        Actions prefcontaction = new Actions(driver);
+        prefcontaction.moveToElement(prefcontelement).build().perform();
+        Thread.sleep(1000);
+        WebElement emailelement = driver.findElement(By.xpath("/html/body/div[12]/ul/li[3]"));
+        Actions emailaction = new Actions(driver);
+        emailaction.moveToElement(emailelement).build().perform();
+        emailelement.click();
         aboutPage.emailinput.input("Mark.Wetzel@example.com");
         aboutPage.membershipnumber.input("0002516746");
         aboutPage.username.input("markwetzel");
         aboutPage.comments.input("test");
         aboutPage.submit.safeClick();
 
-        driver.navigate().back();
-
-        aboutPage.type.select("Member Benefits");
-        aboutPage.memberbenefits.select("Questions about Benefits");
-        aboutPage.contacted.select("Email");
-        aboutPage.emailinput.input("Mark.Wetzel@example.com");
-        aboutPage.membershipnumber.input("0002516746");
-        aboutPage.username.input("markwetzel");
-        aboutPage.comments.input("test");
-        aboutPage.submit.safeClick();
-
-        driver.navigate().back();
-
-        aboutPage.type.select("Login Help");
-        aboutPage.loginhelptype.select("Reset Password");
-        aboutPage.firstname.input("Mark");
-        aboutPage.lastname.input("Wetzel");
-        aboutPage.contacted.select("Email");
-        aboutPage.emailinput.input("Mark.Wetzel@example.com");
-        aboutPage.membershipnumber.input("0002516746");
-        aboutPage.username.input("markwetzel");
-        aboutPage.comments.input("test");
-        aboutPage.submit.safeClick();
-
-        driver.navigate().back();
-
-
-        aboutPage.type.select("Login Help");
-        aboutPage.loginhelptype.select("Forgot Username");
-        aboutPage.firstname.input("Mark");
-        aboutPage.lastname.input("Wetzel");
-        aboutPage.contacted.select("Email");
-        aboutPage.emailinput.input("Mark.Wetzel@example.com");
-        aboutPage.membershipnumber.input("0002516746");
-        aboutPage.username.input("markwetzel");
-        aboutPage.comments.input("test");
-        aboutPage.submit.safeClick();
-
-        driver.navigate().back();
-
-
-        aboutPage.type.select("Login Help");
-        aboutPage.loginhelptype.select("Trouble Logging In");
-        aboutPage.firstname.input("Mark");
-        aboutPage.lastname.input("Wetzel");
-        aboutPage.contacted.select("Email");
-        aboutPage.emailinput.input("Mark.Wetzel@example.com");
-        aboutPage.membershipnumber.input("0002516746");
-        aboutPage.username.input("markwetzel");
-        aboutPage.comments.input("test");
-        aboutPage.submit.safeClick();
-
-        driver.navigate().back();
+//        driver.navigate().back();
+//        aboutPage.type.safeClick();
+//        contactuslistaction.moveToElement(contactuslistelement).build().perform();
+//        Thread.sleep(1000);
+//        WebElement joininfbelement = driver.findElement(By.xpath("/html/body/div[9]/ul/li[3]"));
+//        Actions joininfbaction = new Actions(driver);
+//        joininfbaction.moveToElement(joininfbelement).build().perform();
+//        joininfbelement.click();
+//        aboutPage.firstname.input("Mark");
+//        aboutPage.lastname.input("Wetzel");
+//        aboutPage.contacted.safeClick();
+//        WebElement prefcontelement = driver.findElement(By.xpath("/html/body/div[12]/ul"));
+//        Actions prefcontaction = new Actions(driver);
+//        prefcontaction.moveToElement(prefcontelement).build().perform();
+//        Thread.sleep(1000);
+//        WebElement emailelement = driver.findElement(By.xpath("/html/body/div[12]/ul/li[3]"));
+//        Actions emailaction = new Actions(driver);
+//        emailaction.moveToElement(emailelement).build().perform();
+//        emailelement.click();
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.membershipnumber.input("0002516746");
+//        aboutPage.username.input("markwetzel");
+//        aboutPage.comments.input("test");
+//        aboutPage.submit.safeClick();
 
 
 
 
-        aboutPage.type.select("Login Help");
-        aboutPage.loginhelptype.select("Other");
-        aboutPage.firstname.input("Mark");
-        aboutPage.lastname.input("Wetzel");
-        aboutPage.contacted.select("Email");
-        aboutPage.emailinput.input("Mark.Wetzel@example.com");
-        aboutPage.membershipnumber.input("0002516746");
-        aboutPage.username.input("markwetzel");
-        aboutPage.comments.input("test");
-        aboutPage.submit.safeClick();
-
-        driver.navigate().back();
 
 
-        aboutPage.type.select("Registration Help");
-        aboutPage.firstname.input("Mark");
-        aboutPage.lastname.input("Wetzel");
-        aboutPage.contacted.select("Email");
-        aboutPage.contacted.select("Email");
-        aboutPage.emailinput.input("Mark.Wetzel@example.com");
-        aboutPage.description.input("test");
-        aboutPage.submit.safeClick();
-
-        driver.navigate().back();
 
 
-        aboutPage.type.select("Ag in the Classroom (AITC)");
-        aboutPage.firstname.input("Mark");
-        aboutPage.lastname.input("Wetzel");
-        aboutPage.contacted.select("Email");
-        aboutPage.emailinput.input("Mark.Wetzel@example.com");
-        aboutPage.membershipnumber.input("0002516746");
-        aboutPage.username.input("markwetzel");
-        aboutPage.description.input("test");
-        aboutPage.submit.safeClick();
+//        aboutPage.type.safeClick();
+//        WebElement contactuslist1element = driver.findElement(By.xpath("/html/body/div[9]/ul"));
+//        Actions contactuslist1action = new Actions(driver);
+//        contactuslist1action.moveToElement(contactuslist1element).build().perform();
+//        WebElement memberbenefitselement = driver.findElement(By.xpath("/html/body/div[9]/ul/li[3]"));
+//        Actions memberbenefitsaction = new Actions(driver);
+//        memberbenefitsaction.moveToElement(memberbenefitselement).build().perform();
+//        memberbenefitselement.click();
 
+//        aboutPage.membenhelptype.safeClick();
+//        WebElement membbenlistelement = driver.findElement(By.xpath("/html/body/div[12]"));
+//        Actions membbenlistaction = new Actions(driver);
+//        membbenlistaction.moveToElement(membbenlistelement).build().perform();
+//        Thread.sleep(1000);
+//        WebElement qabelement = driver.findElement(By.xpath("/html/body/div[12]/ul/li[2]"));
+//        Actions qabaction = new Actions(driver);
+//        qabaction.moveToElement(qabelement).build().perform();
+//        qabelement.click();
+//
+//        aboutPage.firstname.input("Mark");
+//        aboutPage.lastname.input("Wetzel");
+//        aboutPage.contacted.safeClick();
+//        WebElement prefcont1element = driver.findElement(By.xpath("/html/body/div[13]/ul"));
+//        Actions prefcont1action = new Actions(driver);
+//        prefcontaction.moveToElement(prefcontelement).build().perform();
+//        Thread.sleep(1000);
+//        WebElement email1element = driver.findElement(By.xpath("/html/body/div[13]/ul/li[3]"));
+//        Actions email1action = new Actions(driver);
+//        email1action.moveToElement(email1element).build().perform();
+//        email1element.click();
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.membershipnumber.input("0002516746");
+//        aboutPage.username.input("markwetzel");
+//        aboutPage.comments.input("test");
+//        aboutPage.submit.safeClick();
+//
+//
+//
+//
+//        aboutPage.type.select("Member Benefits");
+//        aboutPage.memberbenefits.select("Questions about Benefits");
+//        aboutPage.contacted.select("Email");
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.membershipnumber.input("0002516746");
+//        aboutPage.username.input("markwetzel");
+//        aboutPage.comments.input("test");
+//        aboutPage.submit.safeClick();
+//
+//        driver.navigate().back();
+//
+//        aboutPage.type.select("Login Help");
+//        aboutPage.loginhelptype.select("Reset Password");
+//        aboutPage.firstname.input("Mark");
+//        aboutPage.lastname.input("Wetzel");
+//        aboutPage.contacted.select("Email");
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.membershipnumber.input("0002516746");
+//        aboutPage.username.input("markwetzel");
+//        aboutPage.comments.input("test");
+//        aboutPage.submit.safeClick();
+//
+//        driver.navigate().back();
+//
+//
+//        aboutPage.type.select("Login Help");
+//        aboutPage.loginhelptype.select("Forgot Username");
+//        aboutPage.firstname.input("Mark");
+//        aboutPage.lastname.input("Wetzel");
+//        aboutPage.contacted.select("Email");
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.membershipnumber.input("0002516746");
+//        aboutPage.username.input("markwetzel");
+//        aboutPage.comments.input("test");
+//        aboutPage.submit.safeClick();
+//
+//        driver.navigate().back();
+//
+//
+//        aboutPage.type.select("Login Help");
+//        aboutPage.loginhelptype.select("Trouble Logging In");
+//        aboutPage.firstname.input("Mark");
+//        aboutPage.lastname.input("Wetzel");
+//        aboutPage.contacted.select("Email");
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.membershipnumber.input("0002516746");
+//        aboutPage.username.input("markwetzel");
+//        aboutPage.comments.input("test");
+//        aboutPage.submit.safeClick();
+//
+//        driver.navigate().back();
+//
+//
+//
+//
+//        aboutPage.type.select("Login Help");
+//        aboutPage.loginhelptype.select("Other");
+//        aboutPage.firstname.input("Mark");
+//        aboutPage.lastname.input("Wetzel");
+//        aboutPage.contacted.select("Email");
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.membershipnumber.input("0002516746");
+//        aboutPage.username.input("markwetzel");
+//        aboutPage.comments.input("test");
+//        aboutPage.submit.safeClick();
+//
+//        driver.navigate().back();
+//
+//
+//        aboutPage.type.select("Registration Help");
+//        aboutPage.firstname.input("Mark");
+//        aboutPage.lastname.input("Wetzel");
+//        aboutPage.contacted.select("Email");
+//        aboutPage.contacted.select("Email");
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.description.input("test");
+//        aboutPage.submit.safeClick();
+//
+//
+//        aboutPage.type.select("Ag in the Classroom (AITC)");
+//        aboutPage.firstname.input("Mark");
+//        aboutPage.lastname.input("Wetzel");
+//        aboutPage.contacted.select("Email");
+//        aboutPage.emailinput.input("Mark.Wetzel@example.com");
+//        aboutPage.membershipnumber.input("0002516746");
+//        aboutPage.username.input("markwetzel");
+//        aboutPage.description.input("test");
+//        aboutPage.submit.safeClick();
+//
+//
+//        HomePage homePage = new HomePage(driver);
+////        homePage.logoutlink.waitForElementToBeVisible(20);
+//        //       homePage.logoutlink.safeClick();
+//
+//        LogoutPage logoutPage = new LogoutPage(driver);
+//        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
 
-        HomePage homePage = new HomePage(driver);
-        homePage.logoutlink.waitForElementToBeVisible(20);
-        homePage.logoutlink.safeClick();
+    }
 
-        LogoutPage logoutPage = new LogoutPage(driver);
-        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
-        System.out.println("hello");
-
-
+    private void assertEquals(String text, String logout_successful) {
     }
 }
