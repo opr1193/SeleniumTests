@@ -61,7 +61,7 @@ public class HomePage extends Page {
 
     public IfbLink mymemberdealslink = new IfbLink(driver, mymemberdealsElement);
 
-    @FindBy(id = "LogoutLink")
+    @FindBy(xpath = "//*[@id=\"navbar-1\"]/div[8]/div/a/span")
     private WebElement logoutElement;
 
     public IfbLink logoutlink = new IfbLink(driver, logoutElement);
