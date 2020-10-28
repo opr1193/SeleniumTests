@@ -23,23 +23,15 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
         eventRegistrationPage.guestlastnametextbox.input("Balakrishna");
         eventRegistrationPage.guestemailtextbox.input("sree.balakrishna@infb.com");
         eventRegistrationPage.guestcountydropdown.select("Hamilton");
-        eventRegistrationPage.guestcountydropdown.submit();
+//        eventRegistrationPage.guestcountydropdown.submit();
 
-//        WebElement continuebtn = driver.findElement(By.xpath("//*[@id=\"GuestInfo_CountyName\"]"));
-//        continuebtn.submit();
+        WebElement continuebtn = driver.findElement(By.xpath("//*[@id=\"GuestInfo_CountyName\"]"));
+        continuebtn.submit();
 
-        Thread.sleep(5000);
+
 //        eventRegistrationPage.guestcontinuebutton.submit();
-
-
-        
-
 //        eventRegistrationPage.guestcontinuebutton.sendKeys(Keys.TAB);
 //        eventRegistrationPage.guestcontinuebutton.sendKeys(Keys.ENTER);
-
-
-
-
 //        eventRegistrationPage.guestcontinuelink.waitForElementToBeVisible(30);
 //        eventRegistrationPage.guestcontinuelink.safeClick();
 
