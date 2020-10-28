@@ -4,7 +4,7 @@ import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
 import com.infarmbureau.incorporated.test.pages.LogoutPage;
-import com.infarmbureau.incorporated.test.pages.PublicPolicy.PublicPolicyPage;
+import com.infarmbureau.incorporated.test.pages.PublicPolicyPage;
 import org.junit.Ignore;
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.infarmbureau.incorporated.test.pages.OurPrograms;
+package com.infarmbureau.incorporated.test.pages;
 
 import com.infarmbureau.qa.elements.IfbCheckBox;
 import com.infarmbureau.qa.elements.IfbDropDown;

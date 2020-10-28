@@ -1,7 +1,7 @@
 package com.infarmbureau.incorporated.qa.integration;
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
-import com.infarmbureau.incorporated.test.pages.Events.EventsPage;
+import com.infarmbureau.incorporated.test.pages.EventsPage;
 import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
 import org.junit.Ignore;
@@ -13,7 +13,7 @@ public class EventsTest extends IfbIncorporatedTest {
                     public void eventsTest() {
                         start();
                         LoginPage loginPage = new LoginPage(driver);
-                        loginPage.usernameTextField.input("Markwetzel");
+                        loginPage.usernameTextField.input("JoniLinville");
                         loginPage.passwordTextField.input("testing15");
                         loginPage.loginLink.safeClick();
 
