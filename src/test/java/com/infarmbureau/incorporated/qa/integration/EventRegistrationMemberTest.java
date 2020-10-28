@@ -7,6 +7,7 @@ import com.infarmbureau.incorporated.test.pages.EventRegistration.EventRegistrat
 import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -14,8 +15,8 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
-    @Ignore
-    public void eventregistrationtest() {
+    @Test
+    public void eventregistrationtest() throws InterruptedException {
         startEventReg();
         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
 
@@ -23,7 +24,9 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
         eventRegistrationPage.memberlastnametextbox.input("Taylor");
         eventRegistrationPage.memberzipcodetextbox.input("47501");
         eventRegistrationPage.membernumbertextbox.input("0002009802");
-        eventRegistrationPage.membercontinuebutton.safeClick();
+//        eventRegistrationPage.membercontinuebutton.safeClick();
+        WebElement continuebtn = driver.findElement(By.xpath("//*[@id=\"MemberInfo_MemberNumber\"]"));
+        continuebtn.submit();
         eventRegistrationPage.firstattendingcheckbox.check();
         eventRegistrationPage.seconattendingcheckbox.check();
         eventRegistrationPage.firstfirsttimeattendingcheckbox.check();
@@ -57,8 +60,16 @@ public class EventRegistrationMemberTest extends IfbIncorporatedTest {
         eventRegistrationPage.testsessionfirstattendingcheckbox.check();
         eventRegistrationPage.testsessionsecondattendingcheckbox.check();
 //        eventRegistrationPage.testsessionthirdattendingcheckbox.check();
-        eventRegistrationPage.selectsessioncontinuebutton.safeClick();
+        WebElement continuebtn1 = driver.findElement(By.xpath("//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[3]/div[2]/div[3]/label/span[2]"));
+        continuebtn1.submit();
+
+        eventRegistrationPage.secondattendeeemailtextbox.input("Kathie@example.com");
+        Thread.sleep(1000);
+
         eventRegistrationPage.confirmscreentermsbutton.safeClick();
+//        WebElement continuebtn2 = driver.findElement(By.xpath("//*[@id=\"confirm-form\"]/div[5]/div/div/label/span[2]"));
+//        continuebtn2.submit();
+//        eventRegistrationPage.selectsessioncontinuebutton.safeClick();
         eventRegistrationPage.confirmscreencontinuebutton.safeClick();
 
 

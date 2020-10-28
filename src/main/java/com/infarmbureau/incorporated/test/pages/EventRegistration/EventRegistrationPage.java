@@ -233,7 +233,8 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbTextBox secondattendeeemailtextbox = new IfbTextBox(driver, secondattendeeemailElement);
 
-        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[3]/div/div/label/span[2]")
+        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[4]/div/div/label/span[2]")
+        //*[@id="confirm-form"]/div[4]/div/div/label/span[2]
         private WebElement confirmscreentermsElement;
 
         //*[@id="confirm-form"]/div[4]/div/div/label/span[2]
@@ -242,7 +243,7 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbButton confirmscreentermsbutton = new IfbButton(driver, confirmscreentermsElement);
 
-        @FindBy(id = "submitBtn")
+        @FindBy(xpath = "//*[@id=\"submitBtn\"]")
         private WebElement confirmscreencontinueElement;
 
         public IfbButton confirmscreencontinuebutton = new IfbButton(driver, confirmscreencontinueElement);

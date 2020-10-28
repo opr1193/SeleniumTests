@@ -23,17 +23,9 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
         eventRegistrationPage.guestlastnametextbox.input("Balakrishna");
         eventRegistrationPage.guestemailtextbox.input("sree.balakrishna@infb.com");
         eventRegistrationPage.guestcountydropdown.select("Hamilton");
-//        eventRegistrationPage.guestcountydropdown.submit();
 
         WebElement continuebtn = driver.findElement(By.xpath("//*[@id=\"GuestInfo_CountyName\"]"));
         continuebtn.submit();
-
-
-//        eventRegistrationPage.guestcontinuebutton.submit();
-//        eventRegistrationPage.guestcontinuebutton.sendKeys(Keys.TAB);
-//        eventRegistrationPage.guestcontinuebutton.sendKeys(Keys.ENTER);
-//        eventRegistrationPage.guestcontinuelink.waitForElementToBeVisible(30);
-//        eventRegistrationPage.guestcontinuelink.safeClick();
 
 
         eventRegistrationPage.guestfirsttimeattendingcheckbox.check();
@@ -47,20 +39,17 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
         eventRegistrationPage.guestaddhouseholdmemberbutton.safeClick();
         eventRegistrationPage.guestadditionalmember1checkbox.waitForElementToBeVisible(30);
         eventRegistrationPage.guestadditionalmember1checkbox.check();
-//        eventRegistrationPage.guestadditionalmember1firsttimeattendingcheckbox.check();
-//        eventRegistrationPage.guestadditionalmember1preferrednamecheckbox.check();
-//        eventRegistrationPage.guestadditionalmember1preferrednametextbox.input("Sridhar Balakrishna");
-//        eventRegistrationPage.guestadditionalmmember1superqualcheckbox.check();
+
         eventRegistrationPage.guesthouseholdsubmitbutton.safeClick();
         eventRegistrationPage.guesttsessiongoingcheckbox.check();
-//        eventRegistrationPage.guestadditionalmember1tsessiongoingcheckbox.check();
+
         eventRegistrationPage.guestpaidfunsessionbutton.safeClick();
         eventRegistrationPage.guestpaidfunsessiongoingcheckbox.check();
-//        eventRegistrationPage.guestadditionalmember1paidfunsessiongoingcheckbox.check();
+
         eventRegistrationPage.guestpaidfunsessioncontributiontextbox.input("10");
         eventRegistrationPage.guesttestsessionbutton.safeClick();
         eventRegistrationPage.guesttestsessiongoingcheckbox.check();
-//        eventRegistrationPage.guestadditionalmember1testsessiongoingcheckbox.check();
+
         eventRegistrationPage.guestsessionsubmitbutton.safeClick();
         eventRegistrationPage.guestconfirmtermsccheckbox.check();
         eventRegistrationPage.guestconfirmsubmitbutton.safeClick();
@@ -94,27 +83,6 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
         System.out.println("hello");
 
 
-//
-////
-////                        eventRegistrationPage. guestlink.safeClick();
-////                        eventRegistrationPage.guestfirstnametextbox.input("test");
-////                        eventRegistrationPage.guestlastnametextbox.input("test");
-////                        eventRegistrationPage.guestemailtextbox.input("test@example.com");
-////                        eventRegistrationPage.guestcountydropdown.select("Hamilton");
-////                        eventRegistrationPage.guestcountydropdown.waitThenClickSendKeys(10);
-////                        eventRegistrationPage.guestcontinuebutton.safeClick();
-////                        eventRegistrationPage.guestbadgenametextbox.clearTextBox();
-////                        eventRegistrationPage.guestbadgenametextbox.input("test");
-////                        eventRegistrationPage.guestcontinue1button.safeClick();
-////                        eventRegistrationPage.guesttermscheckbox.check();
-////                        eventRegistrationPage.guestregisterlink.safeClick();
-
-//
-//                        ConfirmationPage confirmationPage = new ConfirmationPage(driver);
-//
-////                        assertEquals(confirmationPage.confirmationTextField.getText(), "YOUR CONFIRMATION NUMBER IS");
-////
-////                        assertTrue(confirmationPage.confirmationNumber.isDisplayed());
 
 
     }

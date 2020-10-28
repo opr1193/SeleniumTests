@@ -44,7 +44,6 @@ public class AboutTest extends IfbIncorporatedTest {
 
         aboutPage.youngfarmerslink.safeClick();
 
-//        aboutPage.stateyounglink.safeClick();
 
         aboutPage.collegiatelink.safeClick();
 
@@ -69,16 +68,10 @@ public class AboutTest extends IfbIncorporatedTest {
         aboutPage.marketinglink.safeClick();
 
         aboutPage.aboutlink.safeClick();
-
-//        aboutPage.regionallink.safeClick();
-//
         aboutPage.countylink.safeClick();
-//
-        aboutPage.historylink.safeClick();
-//
-//        aboutPage.ifbhundredlink.safeClick();
 
-//        aboutPage.aboutlink.safeClick();
+        aboutPage.historylink.safeClick();
+
 
         aboutPage.historyonelink.safeClick();
         driver.navigate().back();
@@ -103,12 +96,6 @@ public class AboutTest extends IfbIncorporatedTest {
         aboutPage.ifbpastlink.safeClick();
 
         aboutPage.aboutlink.safeClick();
-
-        //aboutPage.careerslink.safeClick()
-
-
-
-        /*aboutPage.contacttlink.safeClick();*/
 
         aboutPage.contactlink.safeClick();
         aboutPage.contactuslink.safeClick();
