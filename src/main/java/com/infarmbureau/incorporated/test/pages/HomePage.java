@@ -41,7 +41,8 @@ public class HomePage extends Page {
 
     public IfbLink eventslink = new IfbLink(driver, eventsElement);
 
-    @FindBy(xpath= "//*[@id=\"ResourcesLink\"]/span/a")
+    @FindBy(xpath= "//*[@id=\"navbar-1\"]/div[6]/div[1]/a")
+    //*[@id="navbar-1"]/div[6]/div[1]/a
     private WebElement resourcesElement;
 
     public IfbLink resourceslink = new IfbLink(driver, resourcesElement);

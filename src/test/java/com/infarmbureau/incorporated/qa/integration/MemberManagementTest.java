@@ -63,7 +63,7 @@ public class MemberManagementTest extends IfbIncorporatedTest {
 //
 //                       memberManagementPage.endDate.safeClick();
 
-      memberManagementPage.startdateTextField.input("06/10/2019");
+      memberManagementPage.startdateTextField.input("10/30/2019");
 
       memberManagementPage.endDateTextField.input("06/24/2019");
 
