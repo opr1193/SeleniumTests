@@ -4,6 +4,7 @@ package com.infarmbureau.incorporated.qa.integration;
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.ConfirmationPage;
 import com.infarmbureau.incorporated.test.pages.EventRegistration.EventRegistrationPage;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -14,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void eventRegistrationTest() throws InterruptedException {
         startEventReg();
         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
