@@ -26,6 +26,7 @@ public class LoginPage extends Page {
 
     //@FindBy(xpath = "//*[@id=\"fm1\"]/div[2]/input[4]")
     @FindBy(xpath = "//*[@id=\"fm1\"]/div[3]/div[2]/input[4]")
+    //*[@id="fm1"]/div[3]/div[2]/input[4]
 
     private WebElement loginElement;
     public IfbLink loginLink = new IfbLink(driver,loginElement);

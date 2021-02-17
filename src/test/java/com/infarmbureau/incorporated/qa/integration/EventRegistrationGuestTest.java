@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void eventRegistrationTest() throws InterruptedException {
         startEventReg();
         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
@@ -42,9 +42,10 @@ public class EventRegistrationGuestTest extends IfbIncorporatedTest {
         eventRegistrationPage.guestadditionalmember1checkbox.check();
 
         eventRegistrationPage.guesthouseholdsubmitbutton.safeClick();
+        eventRegistrationPage.guestpaidfunsessionbutton.safeClick();
+
         eventRegistrationPage.guesttsessiongoingcheckbox.check();
 
-        eventRegistrationPage.guestpaidfunsessionbutton.safeClick();
         eventRegistrationPage.guestpaidfunsessiongoingcheckbox.check();
 
         eventRegistrationPage.guestpaidfunsessioncontributiontextbox.input("10");

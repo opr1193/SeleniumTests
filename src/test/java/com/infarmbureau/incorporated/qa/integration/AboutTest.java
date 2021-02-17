@@ -28,6 +28,9 @@ public class AboutTest extends IfbIncorporatedTest {
 
         aboutPage.leadershiplink.safeClick();
 
+        Thread.sleep(1000);
+
+
         aboutPage.randylink.safeClick();
 
         aboutPage.kendelllink.safeClick();
@@ -54,6 +57,8 @@ public class AboutTest extends IfbIncorporatedTest {
         aboutPage.infb100link.safeClick();
 
         aboutPage.aboutlink.safeClick();
+
+        Thread.sleep(1000);
 
         aboutPage.stafflink.safeClick();
 
@@ -105,17 +110,19 @@ public class AboutTest extends IfbIncorporatedTest {
         Actions contactuslistaction = new Actions(driver);
         contactuslistaction.moveToElement(contactuslistelement).build().perform();
         Thread.sleep(1000);
-        WebElement paymembershipelement = driver.findElement(By.xpath("/html/body/div[9]/ul/li[2]"));
+        WebElement paymembershipelement = driver.findElement(By.xpath("/html/body/div[8]/ul/li[2]"));
         Actions paymembershipaction = new Actions(driver);
         paymembershipaction.moveToElement(paymembershipelement).build().perform();
+        Thread.sleep(1000);
         paymembershipelement.click();
 
         aboutPage.type.safeClick();
         contactuslistaction.moveToElement(contactuslistelement).build().perform();
         Thread.sleep(1000);
-        WebElement joininfbelement = driver.findElement(By.xpath("/html/body/div[9]/ul/li[3]"));
+        WebElement joininfbelement = driver.findElement(By.xpath("/html/body/div[8]/ul/li[3]"));
         Actions joininfbaction = new Actions(driver);
         joininfbaction.moveToElement(joininfbelement).build().perform();
+        Thread.sleep(1000);
         joininfbelement.click();
         aboutPage.firstname.input("Mark");
         aboutPage.lastname.input("Wetzel");
@@ -124,7 +131,7 @@ public class AboutTest extends IfbIncorporatedTest {
         Actions prefcontaction = new Actions(driver);
         prefcontaction.moveToElement(prefcontelement).build().perform();
         Thread.sleep(1000);
-        WebElement emailelement = driver.findElement(By.xpath("/html/body/div[12]/ul/li[3]"));
+        WebElement emailelement = driver.findElement(By.xpath("/html/body/div[11]/ul/li[3]"));
         Actions emailaction = new Actions(driver);
         emailaction.moveToElement(emailelement).build().perform();
         emailelement.click();
