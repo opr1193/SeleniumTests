@@ -30,7 +30,6 @@ public class AboutTest extends IfbIncorporatedTest {
 
         Thread.sleep(1000);
 
-
         aboutPage.randylink.safeClick();
 
         aboutPage.kendelllink.safeClick();
@@ -44,6 +43,8 @@ public class AboutTest extends IfbIncorporatedTest {
         aboutPage.districtlink.safeClick();
 
         driver.navigate().back();
+
+        Thread.sleep(1000);
 
         aboutPage.youngfarmerslink.safeClick();
 
