@@ -402,7 +402,7 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbCheckBox guesttestsessiongoingcheckbox = new IfbCheckBox(driver, guesttestsessiongoingElement);
 
-        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[7]/div/div[1]/div[3]/div[2]/div[3]/label/span[2]")
+        @FindBy(xpath = "//*[@id=\"step5-form\"]/div[3]/div/div[1]/div[3]/div[2]/div[3]/label[1]/span")
         private WebElement guestadditionalmember1testsessiongoingElement;
 
         public IfbCheckBox guestadditionalmember1testsessiongoingcheckbox = new IfbCheckBox(driver, guestadditionalmember1testsessiongoingElement);
@@ -412,7 +412,7 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
         public IfbButton guestsessionsubmitbutton = new IfbButton(driver, guestsessionsubmitElement);
 
-        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[4]/div/div/label/span[2]")
+        @FindBy(xpath = "//*[@id=\"confirm-form\"]/div[5]/div/div/label/span[2]")
         private WebElement guestconfirmtermsElement;
 
         public IfbCheckBox guestconfirmtermsccheckbox = new IfbCheckBox(driver, guestconfirmtermsElement);
