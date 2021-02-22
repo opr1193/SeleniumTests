@@ -25,7 +25,7 @@ public class HomePage extends Page {
 
     public IfbLink ourprogramslink = new IfbLink(driver, ourprogramsElement);
 
-    @FindBy(xpath= "//*[@id=\"PublicPolicyLink\"]/span/a")
+    @FindBy(xpath= "//*[@id=\"label-E20B7E4B-D540-6B36-96E3-FF0000F5C395\"]")
     private WebElement publicpolicyElement;
 
     public IfbLink publicpolicylink = new IfbLink(driver, publicpolicyElement);
