@@ -142,6 +142,8 @@ public class AboutTest extends IfbIncorporatedTest {
         aboutPage.comments.input("test");
         aboutPage.submit.safeClick();
 
+        System.out.println("hello");
+
 //        driver.navigate().back();
 //        aboutPage.type.safeClick();
 //        contactuslistaction.moveToElement(contactuslistelement).build().perform();
