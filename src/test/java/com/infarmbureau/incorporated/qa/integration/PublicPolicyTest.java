@@ -31,9 +31,48 @@ public class PublicPolicyTest extends IfbIncorporatedTest {
 
         publicPolicyPage.localissueslink.safeClick();
 
+        publicPolicyPage.Indianatownshipmaplink.safeClick();
+
+        driver.navigate().back();
+
+        publicPolicyPage.waterlink.safeClick();
+
         publicPolicyPage.takeactionlink.safeClick();
 
+        publicPolicyPage.lookupcandidatelink.safeClick();
+
+        driver.navigate().back();
+
         publicPolicyPage.policydevelopmentlink.safeClick();
+
+        publicPolicyPage.policydevelopmentresourceslink.safeClick();
+
+        publicPolicyPage.policyrecommendationformlink.safeClick();
+
+        driver.navigate().back();
+
+        publicPolicyPage.policyimplementationlink.safeClick();
+
+        driver.navigate().back();
+
+        driver.navigate().back();
+
+        publicPolicyPage.policyactioncommitteeslink.safeClick();
+
+        publicPolicyPage.donatetoagelectlink.safeClick();
+
+        publicPolicyPage.donatenowlink.safeClick();
+
+        publicPolicyPage.agelectdisclaimerlink.safeClick();
+
+        driver.navigate().back();
+
+        driver.navigate().back();
+
+        driver.navigate().back();
+
+        publicPolicyPage.INFB100link.safeClick();
+
 
         homePage.logoutlink.waitAndClick();
 

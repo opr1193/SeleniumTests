@@ -5,6 +5,7 @@ import com.infarmbureau.incorporated.test.pages.AboutPage;
 import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
 import com.infarmbureau.incorporated.test.pages.LogoutPage;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class AboutTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void aboutTest() throws InterruptedException {
         start();
         LoginPage loginPage = new LoginPage(driver);
