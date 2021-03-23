@@ -4,12 +4,15 @@ import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.EventsPage;
 import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
+import com.infarmbureau.incorporated.test.pages.LogoutPage;
 import org.junit.Ignore;
 import org.junit.Test;
 
+import static org.junit.Assert.assertEquals;
+
 public class EventsTest extends IfbIncorporatedTest {
 
-                    @Ignore
+                    @Test
                     public void eventsTest() {
                         start();
                         LoginPage loginPage = new LoginPage(driver);
@@ -24,9 +27,12 @@ public class EventsTest extends IfbIncorporatedTest {
 
                         EventsPage eventsPage = new EventsPage(driver);
                         eventsPage.stateconventionlink.safeClick();
+                        driver.navigate().back();
+                        homePage.logoutlink.safeClick();
 
-                       /* LogoutPage logoutPage = new LogoutPage(driver);
-                        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");*/
+
+//                        LogoutPage logoutPage = new LogoutPage(driver);
+//                        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
 
 
     }

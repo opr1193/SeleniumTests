@@ -10,7 +10,7 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 public class LogoutPage extends Page {
 
-    @FindBy(xpath= "//*[@id=\"msg\"]/h2")
+    @FindBy(xpath= "//*[@id=\"navbar-1\"]/div[8]/div/a/span")
     private WebElement logoutlabelElement;
 
     public IfbLabel logoutlabel = new IfbLabel(driver, logoutlabelElement);

@@ -36,8 +36,8 @@ public class HomePage extends Page {
     public IfbLink newslink = new IfbLink(driver, newsElement);
 
 
-    @FindBy(xpath= "//*[@id=\"EventsLink\"]/span/a")
-    private WebElement eventsElement;
+    @FindBy(xpath= "//*[@id=\"label-CA0C7E4B-D540-6B36-96E3-FF0000F5C395\"]")
+     private WebElement eventsElement;
 
     public IfbLink eventslink = new IfbLink(driver, eventsElement);
 

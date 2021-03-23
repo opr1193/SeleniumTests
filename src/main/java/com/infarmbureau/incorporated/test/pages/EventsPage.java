@@ -10,13 +10,13 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 public class EventsPage extends Page {
 
-    @FindBy(xpath = "//*[@id=\"MainContent_TCD01A8B5009_Col01\"]/nav/ul/li[1]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[1]")
     private WebElement stateconventionElement;
 
     public IfbLink stateconventionlink = new IfbLink(driver, stateconventionElement);
 
 
-    @FindBy(xpath = "//*[@id=\"MainContent_TCD01A8B5009_Col01\"]/nav/ul/li[2]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[2]")
     private WebElement indianastatefairElement;
 
     public IfbLink indianastatefairlimk = new IfbLink(driver, indianastatefairElement);
