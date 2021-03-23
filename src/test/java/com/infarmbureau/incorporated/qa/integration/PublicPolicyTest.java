@@ -76,7 +76,7 @@ public class PublicPolicyTest extends IfbIncorporatedTest {
 
         homePage.logoutlink.waitAndClick();
 
-        LogoutPage logoutPage = new LogoutPage(driver);
-        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
+//        LogoutPage logoutPage = new LogoutPage(driver);
+//        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
 }
 }
