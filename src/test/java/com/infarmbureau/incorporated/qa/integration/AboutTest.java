@@ -13,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class AboutTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void aboutTest() throws InterruptedException {
         start();
         LoginPage loginPage = new LoginPage(driver);
@@ -29,7 +29,7 @@ public class AboutTest extends IfbIncorporatedTest {
 
         aboutPage.leadershiplink.safeClick();
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
         aboutPage.randylink.safeClick();
 
@@ -63,6 +63,8 @@ public class AboutTest extends IfbIncorporatedTest {
         Thread.sleep(1000);
 
         aboutPage.stafflink.safeClick();
+
+        Thread.sleep(1000);
 
         aboutPage.adminlink.safeClick();
 
