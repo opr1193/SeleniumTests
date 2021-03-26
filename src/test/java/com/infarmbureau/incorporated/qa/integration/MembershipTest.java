@@ -9,11 +9,11 @@ import org.junit.Test;
 
 public class MembershipTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void membershipTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Markwetzel");
+        loginPage.usernameTextField.input("Jonilinville");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginLink.safeClick();
 
@@ -35,16 +35,16 @@ public class MembershipTest extends IfbIncorporatedTest {
 
         membershipPage.mymemberdealslink.safeClick();
 
-        membershipPage.abenitylink.safeClick();
-
-        driver.navigate().back();
+//        membershipPage.abenitylink.safeClick();
+//
+//        driver.navigate().back();
 
         membershipPage.renewyourmembershiplink.safeClick();
 
         homePage.logoutlink.waitAndClick();
-
-       /* LogoutPage logoutPage = new LogoutPage(driver);
-        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");*/
+//
+//          logoutPage = new LogoutPage(driver);
+//        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
 
 
 

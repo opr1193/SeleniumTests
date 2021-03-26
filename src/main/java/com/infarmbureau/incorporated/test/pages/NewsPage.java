@@ -10,27 +10,27 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 public class NewsPage extends Page {
 
-    @FindBy(xpath= "//*[@id=\"MainContent_TCD01A8B5009_Col01\"]/nav/ul/li[1]/a")
+    @FindBy(xpath= "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[1]")
     private WebElement ifbinthenewsElement;
 
     public IfbLink ifbinthenewslink = new IfbLink(driver, ifbinthenewsElement);
 
-    @FindBy(xpath= "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[2]/a")
+    @FindBy(xpath= "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[2]")
     private WebElement newsreleasesElement;
 
     public IfbLink newsreleaseslink = new IfbLink(driver, newsreleasesElement);
 
-    @FindBy(xpath= "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[3]/a")
+    @FindBy(xpath= "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[3]")
     private WebElement publicationsElement;
 
     public IfbLink publicationslink = new IfbLink(driver, publicationsElement);
 
-    @FindBy(xpath= "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[4]/a")
+    @FindBy(xpath= "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[4]")
     private WebElement mediacontactinformationElement;
 
     public IfbLink mediacontactonformationlink = new IfbLink(driver, mediacontactinformationElement);
 
-    @FindBy(xpath= "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[5]/a")
+    @FindBy(xpath= "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[5]")
     private WebElement socialmediaElement;
 
     public IfbLink socialmedialink = new IfbLink(driver, socialmediaElement);

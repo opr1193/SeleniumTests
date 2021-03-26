@@ -64,25 +64,10 @@ public class    ResourcesTest  extends IfbIncorporatedTest {
 
 
 
+           homePage.logoutlink.waitAndClick();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //    homePage.logoutlink.waitAndClick();
-
-//        LogoutPage logoutPage = new LogoutPage(driver);
-//        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
+        LogoutPage logoutPage = new LogoutPage(driver);
+        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
 
     }
 }

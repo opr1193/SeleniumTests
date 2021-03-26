@@ -11,16 +11,17 @@ import static org.junit.Assert.assertEquals;
 
 public class MyMemberDealsTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void myMemberDealsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Markwetzel");
+        loginPage.usernameTextField.input("Jonilinville");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
         homePage.mymemberdealslink.safeClick();
+        driver.navigate().back();
 
         homePage.logoutlink.waitAndClick();
 

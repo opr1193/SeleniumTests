@@ -10,11 +10,11 @@ import org.junit.Test;
 
 public class OurProgramsTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void ourprogramsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Markwetzel");
+        loginPage.usernameTextField.input("Jonilinville");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginLink.waitForElementToBeVisible(10);
         loginPage.loginLink.safeClick();
@@ -28,7 +28,11 @@ public class OurProgramsTest extends IfbIncorporatedTest {
 
         ourProgramsPage.classroomcenterlink.safeClick();
 
-        ourProgramsPage.teacherregistrationlink.safeClick();
+        ourProgramsPage.accurateagribookslink.safeClick();
+
+        ourProgramsPage.additionallink.safeClick();
+
+        ourProgramsPage.AITCteacherregistrationlink.safeClick();
 
         ourProgramsPage.teachernametextbox.input("test");
 
@@ -62,54 +66,54 @@ public class OurProgramsTest extends IfbIncorporatedTest {
 
         ourProgramsPage.volunteerregisterlink.safeClick();
 
-        ourProgramsPage.studentcenterlink.safeClick();
+//        ourProgramsPage.studentcenterlink.safeClick();
 
         ourProgramsPage.volunteercenterlink.safeClick();
 
-        ourProgramsPage.volunteerreportlink.safeClick();
-
-        ourProgramsPage.volunteeremailtextbox.input("mark.wetzel@example.com");
-
-        ourProgramsPage.membercountydropdown.select("Clark");
-
-        ourProgramsPage.presentationnametextbox.input("test presentation");
-
-        ourProgramsPage.presentationdatetextbox.input("03/11/2019");
-
-        ourProgramsPage.presentationlocationtextbox.input("test location");
-
-        ourProgramsPage.singlegradelevelpresentationdropdown.select("Yes");
-
-        ourProgramsPage.gradeofaudiencedropdown.select("6");
-
-        ourProgramsPage.numberofstudentstextbox.input("100");
-
-        ourProgramsPage.numberofadultsdropdown.select("6");
-
-        ourProgramsPage.lengthofpresentationdropdown.select("30+ minutes");
-
-        ourProgramsPage.numberofteachersdropdown.select("0");
-
-        ourProgramsPage.handsonactivitydropdown.select("No");
-
-        ourProgramsPage.agbookdropdown.select("No");
-
-       ourProgramsPage.teachersmaterialsdropdown.select("No");
-
-        ourProgramsPage.agribusinessdropdown.select("No");
-
-        ourProgramsPage.agridonationdropdown.select("No");
-
-        ourProgramsPage.membercommentstextbox.input("test");
-
-        ourProgramsPage.volunteersubmitlink.safeClick();
-
-        ourProgramsPage.leadersinactionlink.safeClick();
-
-        ourProgramsPage.womenleadershipcommitteelink.safeClick();
-
-        ourProgramsPage.youngfarmerslink.safeClick();
-
+//        ourProgramsPage.volunteerreportlink.safeClick();
+//
+//        ourProgramsPage.volunteeremailtextbox.input("mark.wetzel@example.com");
+//
+//        ourProgramsPage.membercountydropdown.select("Clark");
+//
+//        ourProgramsPage.presentationnametextbox.input("test presentation");
+//
+//        ourProgramsPage.presentationdatetextbox.input("03/11/2019");
+//
+//        ourProgramsPage.presentationlocationtextbox.input("test location");
+//
+//        ourProgramsPage.singlegradelevelpresentationdropdown.select("Yes");
+//
+//        ourProgramsPage.gradeofaudiencedropdown.select("6");
+//
+//        ourProgramsPage.numberofstudentstextbox.input("100");
+//
+//        ourProgramsPage.numberofadultsdropdown.select("6");
+//
+//        ourProgramsPage.lengthofpresentationdropdown.select("30+ minutes");
+//
+//        ourProgramsPage.numberofteachersdropdown.select("0");
+//
+//        ourProgramsPage.handsonactivitydropdown.select("No");
+//
+//        ourProgramsPage.agbookdropdown.select("No");
+//
+//       ourProgramsPage.teachersmaterialsdropdown.select("No");
+//
+//        ourProgramsPage.agribusinessdropdown.select("No");
+//
+//        ourProgramsPage.agridonationdropdown.select("No");
+//
+//        ourProgramsPage.membercommentstextbox.input("test");
+//
+//        ourProgramsPage.volunteersubmitlink.safeClick();
+//
+//        ourProgramsPage.leadersinactionlink.safeClick();
+//
+//        ourProgramsPage.womenleadershipcommitteelink.safeClick();
+//
+//        ourProgramsPage.youngfarmerslink.safeClick();
+//
 
         homePage.logoutlink.waitAndClick();
 

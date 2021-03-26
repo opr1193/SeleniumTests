@@ -15,12 +15,12 @@ public class HomePage extends Page {
 
     public IfbLink loginlink = new IfbLink(driver, loginElement);
 
-      @FindBy(xpath= "//*[@id=\"MembershipLink\"]/span/a")
+    @FindBy(xpath= "//*[@id=\"label-4E097E4B-D540-6B36-96E3-FF0000F5C395\"]")
     private WebElement membershipElement;
 
     public IfbLink membershiplink = new IfbLink(driver, membershipElement);
 
-    @FindBy(xpath= "//*[@id=\"OurProgramsLink\"]/span/a")
+    @FindBy(xpath= "//*[@id=\"label-5C097E4B-D540-6B36-96E3-FF0000F5C395\"]")
     private WebElement ourprogramsElement;
 
     public IfbLink ourprogramslink = new IfbLink(driver, ourprogramsElement);
@@ -30,7 +30,7 @@ public class HomePage extends Page {
 
     public IfbLink publicpolicylink = new IfbLink(driver, publicpolicyElement);
 
-    @FindBy(xpath= "//*[@id=\"NewsLink\"]/span/a")
+    @FindBy(xpath= "//*[@id=\"label-3F0C7E4B-D540-6B36-96E3-FF0000F5C395\"]")
     private WebElement newsElement;
 
     public IfbLink newslink = new IfbLink(driver, newsElement);
@@ -52,12 +52,12 @@ public class HomePage extends Page {
 
     public IfbLink contactlink = new IfbLink(driver,contactElement );
 
-    @FindBy(xpath = "//*[@id=\"MyAccountLink\"]/span/a")
+    @FindBy(xpath = "//*[@id=\"navbar-1\"]/div[11]/div/a/span")
     private WebElement myaccountElement;
 
     public IfbLink myAccountlink = new IfbLink(driver, myaccountElement);
 
-    @FindBy(xpath = "//*[@id=\"MainContent_TFC894500006_Col00\"]/div/div/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_C090_Col01\"]/div/div/a")
     private WebElement mymemberdealsElement;
 
     public IfbLink mymemberdealslink = new IfbLink(driver, mymemberdealsElement);

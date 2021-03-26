@@ -10,33 +10,33 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 public class MembershipPage extends Page {
 
-    @FindBy(xpath = "//*[@id=\"MainContent_TCD01A8B5009_Col01\"]/nav/ul/li[1]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[1]")
     private WebElement becomeamemberElement;
 
     public IfbLink becomeamemberlink = new IfbLink(driver, becomeamemberElement);
 
-    @FindBy(xpath = "//*[@id=\"MainContent_T73578992009_Col01\"]/nav/ul/li[2]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[2]")
     private WebElement countyfarmbureauElement;
 
     public IfbLink countyfarmbureaulink = new IfbLink(driver, countyfarmbureauElement);
 
-    @FindBy(xpath = "//*[@id=\"MainContent_TCD01A8B5009_Col01\"]/nav/ul/li[3]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[3]")
     private WebElement infbexpertElement;
 
     public IfbLink infbexpertlink = new IfbLink(driver, infbexpertElement);
 
 
-    @FindBy(xpath = "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[4]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[4]")
     private WebElement infbinsuranceElement;
 
     public IfbLink infbinsurancelink = new IfbLink(driver, infbinsuranceElement);
 
-    @FindBy(xpath = "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[5]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[5]")
     private WebElement membershipsweepstakesElement;
 
     public IfbLink membershipsweepstakeslink = new IfbLink(driver, membershipsweepstakesElement);
 
-    @FindBy(xpath = "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[6]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[6]")
     private WebElement mymemberdealsElement;
 
     public IfbLink mymemberdealslink = new IfbLink(driver, mymemberdealsElement);
@@ -46,7 +46,7 @@ public class MembershipPage extends Page {
 
     public IfbLink abenitylink = new IfbLink(driver, abenityElement);
 
-    @FindBy(xpath = "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[7]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[7]")
     private WebElement renewyourmembershipElement;
 
     public IfbLink renewyourmembershiplink = new IfbLink(driver, renewyourmembershipElement);

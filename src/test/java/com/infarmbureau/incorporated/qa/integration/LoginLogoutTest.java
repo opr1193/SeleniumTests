@@ -21,7 +21,7 @@ public class LoginLogoutTest extends IfbIncorporatedTest {
         loginPage.loginLink.safeClick();
         homePage.logoutlink.safeClick();
 
-//       LogoutPage logoutPage = new LogoutPage(driver);
-//        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
+       LogoutPage logoutPage = new LogoutPage(driver);
+        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
     }
 }

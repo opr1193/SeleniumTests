@@ -13,15 +13,39 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 public class OurProgramsPage extends Page {
 
-    @FindBy(xpath = "//*[@id=\"MainContent_TCD01A8B5009_Col01\"]/nav/ul/li[1]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[1]")
     private WebElement agintheclassroomElement;
 
     public IfbLink agintheclassroomlink = new IfbLink(driver, agintheclassroomElement);
 
-    @FindBy(xpath = "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[1]/ul/li[1]/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/div/a[1]")
     private WebElement classroomcenterElement;
 
     public IfbLink classroomcenterlink = new IfbLink(driver, classroomcenterElement);
+
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/div/a[1]")
+    private WebElement accurateagribooksElement;
+
+    public IfbLink accurateagribookslink = new IfbLink(driver, accurateagribooksElement);
+
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[2]")
+    private WebElement additionallinksElement;
+
+    public IfbLink additionallink = new IfbLink(driver, additionallinksElement);
+
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[3]")
+    private WebElement AITCteacherregistrationElement;
+
+    public IfbLink AITCteacherregistrationlink = new IfbLink(driver, AITCteacherregistrationElement);
+
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[2]")
+    private WebElement adoptaclassroomElement;
+
+    public IfbLink adoptaclassroomlink = new IfbLink(driver, adoptaclassroomElement);
+
+
+
+
 
     @FindBy(xpath = "//*[@id=\"MainContent_C010_Col01\"]/div/div/a")
     private WebElement teacherregistrationElement;
