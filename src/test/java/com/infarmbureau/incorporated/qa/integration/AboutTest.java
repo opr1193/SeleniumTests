@@ -13,7 +13,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class AboutTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void aboutTest() throws InterruptedException {
         start();
         LoginPage loginPage = new LoginPage(driver);
