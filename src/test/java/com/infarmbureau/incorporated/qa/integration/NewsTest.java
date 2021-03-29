@@ -12,7 +12,7 @@ import static org.junit.Assert.assertEquals;
 
 public class NewsTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void newsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);

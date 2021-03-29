@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 
 public class MyMemberDealsTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void myMemberDealsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
