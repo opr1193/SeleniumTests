@@ -64,7 +64,7 @@ public class AboutTest extends IfbIncorporatedTest {
 
         aboutPage.stafflink.safeClick();
 
-        Thread.sleep(1000);
+        Thread.sleep(2000);
 
         aboutPage.adminlink.safeClick();
 
