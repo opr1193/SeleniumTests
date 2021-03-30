@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class    ResourcesTest  extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void resourcesTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
