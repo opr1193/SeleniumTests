@@ -2,10 +2,7 @@ package com.infarmbureau.incorporated.qa.integration;
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;
 import com.infarmbureau.incorporated.test.pages.AboutPage;
-import com.infarmbureau.incorporated.test.pages.HomePage;
 import com.infarmbureau.incorporated.test.pages.LoginPage;
-import com.infarmbureau.incorporated.test.pages.LogoutPage;
-import org.junit.Ignore;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -150,6 +147,7 @@ public class AboutTest extends IfbIncorporatedTest {
 
     }
 
-    private void assertEquals(String text, String logout_successful) {
+//    private void assertEquals(String text, String logout_successful)
+   {
     }
 }
