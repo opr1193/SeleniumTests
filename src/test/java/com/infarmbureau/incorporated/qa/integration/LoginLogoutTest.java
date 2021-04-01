@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 
 public class LoginLogoutTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void loginlogouttest() {
         start();
         HomePage homePage = new HomePage(driver);

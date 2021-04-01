@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class MyAccountTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void myAccountTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
