@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class MemberManagementTest extends IfbIncorporatedTest {
 
-   @Test
+   @Ignore
    public void membermanagementtest() {
       startMemberMgt();
       MemberManagementPage  memberManagementPage = new MemberManagementPage(driver);
