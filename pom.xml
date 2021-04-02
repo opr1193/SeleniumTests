@@ -4,8 +4,8 @@
 
     <modelVersion>4.0.0</modelVersion>
     <packaging>jar</packaging>
-    <artifactId>sitefinitytests</artifactId>
-    <name>sitefinitytests</name>
+    <artifactId>incorporatedtests</artifactId>
+    <name>incorporatedtests</name>
 
     <parent>
         <groupId>com.infarmbureau</groupId>
