@@ -68,7 +68,7 @@ public class OurProgramsTest extends IfbIncorporatedTest {
 
 //        ourProgramsPage.studentcenterlink.safeClick();
 
-        ourProgramsPage.volunteercenterlink.safeClick();
+//        ourProgramsPage.volunteercenterlink.safeClick();
 
 //        ourProgramsPage.volunteerreportlink.safeClick();
 //
