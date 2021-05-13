@@ -15,12 +15,12 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationGuestTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void eventRegistrationTest() throws InterruptedException {
         startEventReg();
         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
         eventRegistrationPage.guestlink.safeClick();
-        eventRegistrationPage.guestfirstnametextbox.input("Sree");
+        eventRegistrationPage.guestfirstnametextbox.input("Test");
         eventRegistrationPage.guestlastnametextbox.input("Test");
         eventRegistrationPage.guestemailtextbox.input("sree.balakrishna@infb.com");
         eventRegistrationPage.guestcountydropdown.select("Hamilton");

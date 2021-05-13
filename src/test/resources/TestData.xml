@@ -3,4 +3,5 @@
     <baseUrl>https://sso-qag.infarmbureau.com/login?service=https://incdmz-qa.infarmbureau.org/</baseUrl>
     <eventRegUrl>https://app-qa.infarmbureau.org/EventRegistration?event=121</eventRegUrl>
     <memberMgtUrl>https://member-management-qag.infarmbureau.com/</memberMgtUrl>
+    <healthPlanUrl>https://qa.infbhealthplans.com/</healthPlanUrl>
 </testData>

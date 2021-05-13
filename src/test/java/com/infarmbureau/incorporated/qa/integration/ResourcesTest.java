@@ -13,7 +13,7 @@ public class    ResourcesTest  extends IfbIncorporatedTest {
     public void resourcesTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("JoniLinville");
+        loginPage.usernameTextField.input("Markyork");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginLink.safeClick();
 

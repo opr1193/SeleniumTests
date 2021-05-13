@@ -15,7 +15,7 @@ public class AboutTest extends IfbIncorporatedTest {
     public void aboutTest() throws InterruptedException {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("JoniLinville");
+        loginPage.usernameTextField.input("Markyork");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginLink.safeClick();
 

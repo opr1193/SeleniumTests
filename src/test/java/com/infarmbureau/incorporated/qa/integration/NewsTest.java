@@ -16,7 +16,7 @@ public class NewsTest extends IfbIncorporatedTest {
     public void newsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Jonilinville");
+        loginPage.usernameTextField.input("Markyork");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginLink.safeClick();
 

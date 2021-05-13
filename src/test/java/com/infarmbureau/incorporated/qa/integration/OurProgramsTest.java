@@ -14,7 +14,7 @@ public class OurProgramsTest extends IfbIncorporatedTest {
     public void ourprogramsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Jonilinville");
+        loginPage.usernameTextField.input("Markyork");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginLink.waitForElementToBeVisible(10);
         loginPage.loginLink.safeClick();

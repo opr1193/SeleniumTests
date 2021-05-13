@@ -13,7 +13,7 @@ public class MyAccountTest extends IfbIncorporatedTest {
     public void myAccountTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Jonilinville");
+        loginPage.usernameTextField.input("Markyork");
         loginPage.passwordTextField.input("testing15");
         loginPage.loginLink.safeClick();
 
