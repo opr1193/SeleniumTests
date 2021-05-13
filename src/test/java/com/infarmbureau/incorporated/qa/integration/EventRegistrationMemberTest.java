@@ -15,7 +15,7 @@ import static org.junit.Assert.assertTrue;
 
 public class EventRegistrationMemberTest extends IfbIncorporatedTest {
 
-    @Test
+    @Ignore
     public void eventregistrationtest() throws InterruptedException {
         startEventReg();
         EventRegistrationPage eventRegistrationPage = new EventRegistrationPage(driver);
