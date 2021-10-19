@@ -39,9 +39,9 @@ public class MembershipTest extends IfbIncorporatedTest {
 //
 //        driver.navigate().back();
 
-        membershipPage.renewyourmembershiplink.safeClick();
+        //membershipPage.renewyourmembershiplink.safeClick();
 
-        homePage.logoutlink.waitAndClick();
+        //homePage.logoutlink.waitAndClick();
 //
 //          logoutPage = new LogoutPage(driver);
 //        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
