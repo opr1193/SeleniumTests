@@ -15,10 +15,10 @@ public class EventsTest extends IfbIncorporatedTest {
                     @Test
                     public void eventsTest() {
                         start();
-                        LoginPage loginPage = new LoginPage(driver);
-                        loginPage.usernameTextField.input("Markyork");
-                        loginPage.passwordTextField.input("testing15");
-                        loginPage.loginLink.safeClick();
+                        //LoginPage loginPage = new LoginPage(driver);
+                        //loginPage.usernameTextField.input("Markyork");
+                        //loginPage.passwordTextField.input("testing15");
+                        //loginPage.loginLink.safeClick();
 
                         HomePage homePage = new HomePage(driver);
                         homePage.eventslink.safeClick();
@@ -28,11 +28,11 @@ public class EventsTest extends IfbIncorporatedTest {
                         EventsPage eventsPage = new EventsPage(driver);
                         eventsPage.stateconventionlink.safeClick();
                         driver.navigate().back();
-                        homePage.logoutlink.safeClick();
+                        //homePage.logoutlink.safeClick();
 
 
-                        LogoutPage logoutPage = new LogoutPage(driver);
-                        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
+                        //LogoutPage logoutPage = new LogoutPage(driver);
+                        //assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
 
 
     }
