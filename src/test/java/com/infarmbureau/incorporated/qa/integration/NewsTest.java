@@ -15,10 +15,10 @@ public class NewsTest extends IfbIncorporatedTest {
     @Test
     public void newsTest() {
         start();
-        LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Markyork");
-        loginPage.passwordTextField.input("testing15");
-        loginPage.loginLink.safeClick();
+        //LoginPage loginPage = new LoginPage(driver);
+        //loginPage.usernameTextField.input("Markyork");
+        //loginPage.passwordTextField.input("testing15");
+        //loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
         homePage.newslink.safeClick();
@@ -37,9 +37,9 @@ public class NewsTest extends IfbIncorporatedTest {
         newsPage.socialmedialink.safeClick();
 
 
-        homePage.logoutlink.waitAndClick();
+        //homePage.logoutlink.waitAndClick();
 
-        LogoutPage logoutPage = new LogoutPage(driver);
-//        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
+       //LogoutPage logoutPage = new LogoutPage(driver);
+//assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
     }
 }
