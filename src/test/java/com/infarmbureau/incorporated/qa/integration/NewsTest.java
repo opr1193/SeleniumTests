@@ -12,13 +12,13 @@ import static org.junit.Assert.assertEquals;
 
 public class NewsTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void newsTest() {
         start();
-        //LoginPage loginPage = new LoginPage(driver);
-        //loginPage.usernameTextField.input("Markyork");
-        //loginPage.passwordTextField.input("testing15");
-        //loginPage.loginLink.safeClick();
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.usernameTextField.input("Markyork");
+        loginPage.passwordTextField.input("testing15");
+        loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
         homePage.newslink.safeClick();

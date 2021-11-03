@@ -60,7 +60,9 @@ public class AboutPage extends Page {
 
     public IfbLink districtlink = new IfbLink(driver, districtElement);
 
-    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/div/a[7]")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[7]")
+    //*[@id="Contentplaceholder_T4958B839001_Col03"]/div/div/div/a[7]
+    //*[@id="Contentplaceholder_T4958B839001_Col03"]/div/div/a[7]
     private WebElement youngfarmersElement;
 
     public IfbLink youngfarmerslink = new IfbLink(driver, youngfarmersElement);

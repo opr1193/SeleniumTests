@@ -12,6 +12,8 @@ public class HPAboutPage extends Page {
 
 
     @FindBy(xpath = "//*[@id=\"label-9F452901-BB8C-49C9-90C5-60C8B3B49DE3\"]")
+    //*[@id="label-9F452901-BB8C-49C9-90C5-60C8B3B49DE3"]
+    //*[@id="label-9F452901-BB8C-49C9-90C5-60C8B3B49DE3"]
     private WebElement aboutElement;
 
     public IfbLink aboutlink = new IfbLink(driver, aboutElement);

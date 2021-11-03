@@ -9,7 +9,7 @@ import static org.junit.Assert.assertEquals;
 
 public class    ResourcesTest  extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void resourcesTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
@@ -42,32 +42,32 @@ public class    ResourcesTest  extends IfbIncorporatedTest {
         resourcesPage.AITCagthemeddropdown.select("No");
         resourcesPage.AITCsubjectcheckbox.safeClick();
         resourcesPage.AITCregisterbutton.safeClick();
-        resourcesPage.AITCformclassroomlink.safeClick();
-        resourcesPage.AITCadoptclassroomlink.safeClick();
-        resourcesPage.AITCvolunteercenterlink.safeClick();
-        resourcesPage.AITCvolunteerrecogprogramlink.safeClick();
-        resourcesPage.AITCvolunteerrecogprogramlevelslink.safeClick();
-        resourcesPage.AITCbacktovolunteercenterlink.safeClick();
-        resourcesPage.AITCprogramsandeventslink.safeClick();
-        resourcesPage.AITCgrantslink.safeClick();
-        resourcesPage.AITCgrantsprogramslink.safeClick();
-        resourcesPage.AITCscholarshipslink.safeClick();
-        resourcesPage.backtoAITClink.safeClick();
-        resourcesPage.leadersinactionlink.safeClick();
-        resourcesPage.womensleadershiplink.safeClick();
-        resourcesPage.districteducationlink.safeClick();
-        driver.navigate().back();
-        resourcesPage.youngfarmerslink.safeClick();
-        resourcesPage.statecommitteelink.safeClick();
-        resourcesPage.district1link.safeClick();
-        resourcesPage.district2link.safeClick();
+//        resourcesPage.AITCformclassroomlink.safeClick();
+//        resourcesPage.AITCadoptclassroomlink.safeClick();
+//        resourcesPage.AITCvolunteercenterlink.safeClick();
+//        resourcesPage.AITCvolunteerrecogprogramlink.safeClick();
+//        resourcesPage.AITCvolunteerrecogprogramlevelslink.safeClick();
+//        resourcesPage.AITCbacktovolunteercenterlink.safeClick();
+//        resourcesPage.AITCprogramsandeventslink.safeClick();
+//        resourcesPage.AITCgrantslink.safeClick();
+//        resourcesPage.AITCgrantsprogramslink.safeClick();
+//        resourcesPage.AITCscholarshipslink.safeClick();
+//        resourcesPage.backtoAITClink.safeClick();
+//        resourcesPage.leadersinactionlink.safeClick();
+//        resourcesPage.womensleadershiplink.safeClick();
+//        resourcesPage.districteducationlink.safeClick();
+//        driver.navigate().back();
+//        resourcesPage.youngfarmerslink.safeClick();
+//        resourcesPage.statecommitteelink.safeClick();
+//        resourcesPage.district1link.safeClick();
+//        resourcesPage.district2link.safeClick();
+//
 
-
-
-           homePage.logoutlink.waitAndClick();
-
-        LogoutPage logoutPage = new LogoutPage(driver);
-        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
+//
+//           homePage.logoutlink.waitAndClick();
+//
+//        LogoutPage logoutPage = new LogoutPage(driver);
+//        assertEquals(logoutPage.logoutlabel.getText(),"Logout successful");
 
     }
 }

@@ -11,7 +11,7 @@ import static org.junit.Assert.assertEquals;
 
 public class MyMemberDealsTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void myMemberDealsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
@@ -23,10 +23,10 @@ public class MyMemberDealsTest extends IfbIncorporatedTest {
         homePage.mymemberdealslink.safeClick();
         driver.navigate().back();
 
-        homePage.logoutlink.waitAndClick();
-
-        LogoutPage logoutPage = new LogoutPage(driver);
-        assertEquals(logoutPage.logoutlabel.getText(), "Logout successful");
+//        homePage.logoutlink.waitAndClick();
+//
+//        LogoutPage logoutPage = new LogoutPage(driver);
+//        assertEquals(logoutPage.logoutlabel.getText(), "Logout successful");
     }
 }
 

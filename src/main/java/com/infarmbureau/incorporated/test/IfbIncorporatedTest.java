@@ -11,6 +11,7 @@ public class IfbIncorporatedTest extends DriverTemplate {
   
   @Before
   public void beforeSetUp() {
+
     driver = getDriver();
   }
 

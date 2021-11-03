@@ -10,7 +10,7 @@ import org.junit.Test;
 
 public class OurProgramsTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void ourprogramsTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
@@ -114,10 +114,10 @@ public class OurProgramsTest extends IfbIncorporatedTest {
 //
 //        ourProgramsPage.youngfarmerslink.safeClick();
 //
-
-        homePage.logoutlink.waitAndClick();
-
-        LogoutPage logoutPage = new LogoutPage(driver);
+//
+//        homePage.logoutlink.waitAndClick();
+//
+//        LogoutPage logoutPage = new LogoutPage(driver);
          }
 
 

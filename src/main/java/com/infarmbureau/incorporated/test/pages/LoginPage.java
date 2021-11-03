@@ -14,18 +14,19 @@ public class LoginPage extends Page {
 
 
 
-    @FindBy(id = "username")
+//    @FindBy(id = "username")
+    @FindBy(xpath = "/html/body/div/div[1]/div/form/label[1]/input")
     private WebElement userNameElement;
     public IfbTextBox usernameTextField = new IfbTextBox(driver, userNameElement);
 
-    @FindBy(id = "password")
+    @FindBy(xpath = "/html/body/div/div[1]/div/form/label[2]/input")
     private WebElement passwordElement;
     public IfbTextBox passwordTextField = new IfbTextBox(driver, passwordElement);
 
 
 
     //@FindBy(xpath = "//*[@id=\"fm1\"]/div[2]/input[4]")
-    @FindBy(xpath = "//*[@id=\"fm1\"]/div[3]/div[2]/input[4]")
+    @FindBy(xpath = "/html/body/div/div[1]/div/form/input[6]")
     //*[@id="fm1"]/div[3]/div[2]/input[4]
 
     private WebElement loginElement;

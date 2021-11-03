@@ -9,13 +9,13 @@ import org.junit.Test;
 
 public class MembershipTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void membershipTest() {
         start();
-        //LoginPage loginPage = new LoginPage(driver);
-        //loginPage.usernameTextField.input("Markyork");
-        //loginPage.passwordTextField.input("testing15");
-        //loginPage.loginLink.safeClick();
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.usernameTextField.input("Markyork");
+        loginPage.passwordTextField.input("testing15");
+        loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
         homePage.membershiplink.safeClick();
