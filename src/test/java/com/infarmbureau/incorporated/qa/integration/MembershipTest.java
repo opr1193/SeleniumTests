@@ -13,8 +13,8 @@ public class MembershipTest extends IfbIncorporatedTest {
     public void membershipTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Markyork");
-        loginPage.passwordTextField.input("testing15");
+        loginPage.usernameTextField.input("Markyorkmark");
+        loginPage.passwordTextField.input("testing22");
         loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
