@@ -26,7 +26,8 @@ public class LoginPage extends Page {
 
 
     //@FindBy(xpath = "//*[@id=\"fm1\"]/div[2]/input[4]")
-    @FindBy(xpath = "/html/body/div/div[1]/div/form/input[6]")
+    @FindBy(xpath = "//*[@id=\"fm1\"]/input[6]")
+    //*[@id="fm1"]/input[6]
     //*[@id="fm1"]/div[3]/div[2]/input[4]
 
     private WebElement loginElement;

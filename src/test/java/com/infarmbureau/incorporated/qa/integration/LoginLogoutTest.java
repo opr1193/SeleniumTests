@@ -11,19 +11,20 @@ import static org.junit.Assert.assertEquals;
 
 public class LoginLogoutTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void loginlogouttest() {
         start();
         HomePage homePage = new HomePage(driver);
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.usernameTextField.input("Markyork");
-        loginPage.passwordTextField.input("testing15");
+        loginPage.usernameTextField.input("Markyorkmark");
+        loginPage.passwordTextField.input("testing22");
         loginPage.loginLink.safeClick();
+        homePage.logoutlink.waitForElementToBeVisible(2000);
         homePage.logoutlink.safeClick();
 
 //       LogoutPage logoutPage = new LogoutPage(driver);
 //        assertEquals(logoutPage.logoutlabel.getText(),"Logout successfully");
-//        System.out.println("hello");
+        System.out.println("hello");
 
     }
 }
