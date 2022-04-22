@@ -9,8 +9,8 @@ import static org.junit.Assert.assertEquals;
 
 public class    ResourcesTest  extends IfbIncorporatedTest {
 
-    @Ignore
-    public void resourcesTest() {
+    @Test
+    public void resourcesTest() throws InterruptedException {
         start();
         LoginPage loginPage = new LoginPage(driver);
         loginPage.usernameTextField.input("Markyorkmark");
@@ -18,9 +18,11 @@ public class    ResourcesTest  extends IfbIncorporatedTest {
         loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
+        Thread.sleep(2000);
         homePage.resourceslink.safeClick();
         ResourcesPage resourcesPage = new ResourcesPage(driver);
         resourcesPage.agintheclassroomlink.safeClick();
+        Thread.sleep(2000);
         resourcesPage.classroomcenterlink.safeClick();
         resourcesPage.accurateagbooklink.safeClick();
         resourcesPage.additionallinks.safeClick();
