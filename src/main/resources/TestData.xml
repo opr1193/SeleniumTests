@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <testData>
-    <baseUrl>https://sso-qag.infarmbureau.com/login?service=https://incdmz-qa.infarmbureau.org/</baseUrl>
+    <baseUrl>https://sso-qag.infarmbureau.com/login?service=https://qa.infarmbureau.org/about</baseUrl>
     <healthPlanUrl>https://qa.infbhealthplans.com/</healthPlanUrl>
 </testData>
