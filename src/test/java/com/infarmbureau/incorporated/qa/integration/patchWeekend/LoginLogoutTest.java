@@ -18,6 +18,7 @@ public class LoginLogoutTest extends IfbIncorporatedTest {
         loginPage.usernameTextField.input("Markyorkmark");
         loginPage.passwordTextField.input("testing22");
         loginPage.loginLink.safeClick();
+        homePage.logoutlink.waitForElementToBeVisible(2000);
         homePage.logoutlink.safeClick();
 
        LogoutPage logoutPage = new LogoutPage(driver);

@@ -1,5 +1,6 @@
 package com.infarmbureau.incorporated.test.pages;
 
+import com.infarmbureau.qa.elements.IfbButton;
 import com.infarmbureau.qa.elements.IfbLink;
 import com.infarmbureau.qa.pages.Page;
 import org.openqa.selenium.WebDriver;
@@ -10,20 +11,19 @@ import static com.infarmbureau.qa.enums.Spinner.SPINNER;
 
 public class MyAccountPage extends Page {
 
-    @FindBy(xpath= "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[1]/a")
-    private WebElement myprofileElement;
 
-    public IfbLink myprofilelink = new IfbLink(driver, myprofileElement);
 
-    @FindBy(xpath= "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[3]/a")
-    private WebElement printMembershipCardElement;
+    @FindBy(xpath= "//*[@id=\"Contentplaceholder_C020_Col00\"]/div[1]/div[1]/div/div/div[1]/div[1]")
+    private WebElement viewmembershipcardElement;
 
-    public IfbLink printmembershipcardlink = new IfbLink(driver, printMembershipCardElement);
+    public IfbLink viewmembershipcardlink = new IfbLink(driver, viewmembershipcardElement);
 
-    @FindBy(xpath= "//*[@id=\"MainContent_T51928A07018_Col01\"]/nav/ul/li[4]/a")
-    private WebElement contactusElement;
+    @FindBy(id = "Contentplaceholder_C020_Col00")
+    //*[@id="Contentplaceholder_C020_Col00"]/form[1]/div[1]/button[2]
+    //*[@id="Contentplaceholder_C020_Col00"]/form[1]/div[1]/button[2]
+    private WebElement gopaperlessElement;
 
-    public IfbLink contactuslink = new IfbLink(driver, contactusElement);
+    public IfbButton gopaperlessbutton = new IfbButton(driver, gopaperlessElement);
 
     public MyAccountPage(WebDriver driver) {
 

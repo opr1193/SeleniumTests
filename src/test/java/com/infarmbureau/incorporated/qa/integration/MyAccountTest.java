@@ -9,7 +9,7 @@ import org.junit.Test;
 
 public class MyAccountTest extends IfbIncorporatedTest {
 
-    @Ignore
+    @Test
     public void myAccountTest() {
         start();
         LoginPage loginPage = new LoginPage(driver);
@@ -18,14 +18,13 @@ public class MyAccountTest extends IfbIncorporatedTest {
         loginPage.loginLink.safeClick();
 
         HomePage homePage = new HomePage(driver);
-        homePage.eventslink.safeClick();
-
-        homePage.myAccountlink.safeClick();
-
-
-
-
-
+        homePage.myaccountlink.waitForElementToBeVisible(200);
+        homePage.myaccountlink.safeClick();
+        MyAccountPage myAccountPage = new MyAccountPage(driver);
+        myAccountPage.viewmembershipcardlink.waitForElementToBeVisible(200);
+        myAccountPage.viewmembershipcardlink.safeClick();
+        myAccountPage.gopaperlessbutton.safeClick();
+        System.out.println("hello");
 
 
     }
