@@ -22,16 +22,31 @@ public class MembershipTest extends IfbIncorporatedTest {
 
         MembershipPage membershipPage = new MembershipPage(driver);
 
+        membershipPage.becomeamemberlink.waitForElementToBeVisible(100);
+
         membershipPage.becomeamemberlink.safeClick();
+
+        membershipPage.countyfarmbureaulink.waitForElementToBeVisible(100);
 
         membershipPage.countyfarmbureaulink.safeClick();
 
-        homePage.membershiplink.safeClick();
+        membershipPage.membershiplink.waitForElementToBeVisible(100);
+
+        membershipPage.membershiplink.safeClick();
+
+        membershipPage.infbexpertlink.waitForElementToBeVisible(200);
+
         membershipPage.infbexpertlink.safeClick();
+
+        membershipPage.infbinsurancelink.waitForElementToBeVisible(100);
 
         membershipPage.infbinsurancelink.safeClick();
 
+        membershipPage.membershipsweepstakeslink.waitForElementToBeVisible(100);
+
         membershipPage.membershipsweepstakeslink.safeClick();
+
+        membershipPage.mymemberdealslink.waitForElementToBeVisible(100);
 
         membershipPage.mymemberdealslink.safeClick();
 

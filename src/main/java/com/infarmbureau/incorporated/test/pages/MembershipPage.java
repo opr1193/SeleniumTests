@@ -25,6 +25,13 @@ public class MembershipPage extends Page {
 
     public IfbLink infbexpertlink = new IfbLink(driver, infbexpertElement);
 
+    @FindBy(xpath = "//*[@id=\"label-4E097E4B-D540-6B36-96E3-FF0000F5C395\"]")
+    private WebElement membershipElement;
+
+    public IfbLink membershiplink = new IfbLink(driver, membershipElement);
+
+
+
 
     @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[4]")
     private WebElement infbinsuranceElement;

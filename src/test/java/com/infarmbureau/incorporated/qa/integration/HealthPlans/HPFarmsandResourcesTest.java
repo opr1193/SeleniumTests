@@ -19,6 +19,8 @@ public class HPFarmsandResourcesTest extends IfbIncorporatedTest {
 
         hpformsandresourcesPage.formsandresourceslink.safeClick();
 
+        hpformsandresourcesPage.newapplicationlink.waitForElementToBeVisible(100);
+
         hpformsandresourcesPage.newapplicationlink.safeClick();
 
         hpformsandresourcesPage.claimsformslink.safeClick();

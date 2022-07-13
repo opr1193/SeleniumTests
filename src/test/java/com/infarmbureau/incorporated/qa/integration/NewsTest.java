@@ -27,12 +27,20 @@ public class NewsTest extends IfbIncorporatedTest {
 
         newsPage.ifbinthenewslink.safeClick();
 
+        newsPage.newsreleaseslink.waitForElementToBeVisible(100);
+
         newsPage.newsreleaseslink.safeClick();
+
+        newsPage.publicationslink.waitForElementToBeVisible(100);
 
         newsPage.publicationslink.safeClick();
 
+        newsPage.mediacontactonformationlink.waitForElementToBeVisible(100);
+
 
         newsPage.mediacontactonformationlink.safeClick();
+
+        newsPage.socialmedialink.waitForElementToBeVisible(100);
 
         newsPage.socialmedialink.safeClick();
 

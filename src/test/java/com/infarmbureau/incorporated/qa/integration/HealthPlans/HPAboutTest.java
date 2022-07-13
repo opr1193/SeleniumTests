@@ -18,7 +18,11 @@ public class HPAboutTest extends IfbIncorporatedTest {
 
         HPAboutPage hpaboutPage = new HPAboutPage(driver);
 
+        hpaboutPage.aboutlink.waitForElementToBeVisible(200);
+
         hpaboutPage.aboutlink.safeClick();
+
+        hpaboutPage.greatlink.waitForElementToBeVisible(200);
 
         hpaboutPage.greatlink.safeClick();
 

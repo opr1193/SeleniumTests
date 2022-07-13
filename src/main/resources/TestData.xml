@@ -2,4 +2,9 @@
 <testData>
     <baseUrl>https://sso-qag.infarmbureau.com/login?service=https://qa.infarmbureau.org/about</baseUrl>
     <healthPlanUrl>https://qa.infbhealthplans.com/</healthPlanUrl>
+    <memberPurUrl>https://join-qag.infarmbureau.org/</memberPurUrl>
+    <memberadminUrl>https://member-management-qag.infarmbureau.com/membership/admin/2579058</memberadminUrl>
+    <membersubmissionUrl>https://member-management-qag.infarmbureau.com/membership/submission/R924PZOFF030CLTCTCN1</membersubmissionUrl>
+    <membermanagementUrl>https://member-management-qag.infarmbureau.com</membermanagementUrl>
+
 </testData>

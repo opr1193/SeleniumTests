@@ -16,6 +16,7 @@ public class HomePage extends Page {
     public IfbLink loginlink = new IfbLink(driver, loginElement);
 
     @FindBy(xpath= "//*[@id=\"label-4E097E4B-D540-6B36-96E3-FF0000F5C395\"]")
+    //*[@id="label-4E097E4B-D540-6B36-96E3-FF0000F5C395"]
     private WebElement membershipElement;
 
     public IfbLink membershiplink = new IfbLink(driver, membershipElement);
@@ -59,10 +60,17 @@ public class HomePage extends Page {
 
 
 
-    @FindBy(xpath = "//*[@id=\"Contentplaceholder_C090_Col01\"]/div/div/a")
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col03\"]/div/div/a[6]")
     private WebElement mymemberdealsElement;
+    //*[@id="Contentplaceholder_T4958B839001_Col03"]/div/div/a[6]
 
     public IfbLink mymemberdealslink = new IfbLink(driver, mymemberdealsElement);
+
+
+    @FindBy(xpath = "//*[@id=\"Contentplaceholder_T4958B839001_Col02\"]/div[2]/div/div/a[6]/img\n")
+    private WebElement abenityElement;
+
+    public IfbLink abenitylink = new IfbLink(driver, abenityElement);
 
     @FindBy(xpath = "//*[@id=\"navbar-1\"]/div[8]/div/a/span")
     //*[@id="navbar-1"]/div[8]/div/a/span

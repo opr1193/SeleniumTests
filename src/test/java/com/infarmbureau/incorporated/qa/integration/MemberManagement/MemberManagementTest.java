@@ -1,4 +1,4 @@
-package com.infarmbureau.incorporated.qa.integration;
+package com.infarmbureau.incorporated.qa.integration.MemberManagement;
 
 
 import com.infarmbureau.incorporated.test.IfbIncorporatedTest;

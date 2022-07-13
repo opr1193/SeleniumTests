@@ -26,13 +26,23 @@ public class OurProgramsTest extends IfbIncorporatedTest {
 
         ourProgramsPage.agintheclassroomlink.safeClick();
 
+        ourProgramsPage.classroomcenterlink.waitForElementToBeVisible(100);
+
         ourProgramsPage.classroomcenterlink.safeClick();
+
+        ourProgramsPage.accurateagribookslink.waitForElementToBeVisible(100);
 
         ourProgramsPage.accurateagribookslink.safeClick();
 
+        ourProgramsPage.additionallink.waitForElementToBeVisible(100);
+
         ourProgramsPage.additionallink.safeClick();
 
+        ourProgramsPage.AITCteacherregistrationlink.waitForElementToBeVisible(100);
+
         ourProgramsPage.AITCteacherregistrationlink.safeClick();
+
+        ourProgramsPage.teachernametextbox.waitForElementToBeVisible(100);
 
         ourProgramsPage.teachernametextbox.input("test");
 

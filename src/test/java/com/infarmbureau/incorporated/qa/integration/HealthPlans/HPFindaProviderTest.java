@@ -18,6 +18,8 @@ public class HPFindaProviderTest extends IfbIncorporatedTest {
 
         hpFindaProviderPage.unitedhealthcarelink.safeClick();
 
+        hpFindaProviderPage.deltadentallink.waitForElementToBeVisible(100);
+
         hpFindaProviderPage.deltadentallink.safeClick();
 
         hpFindaProviderPage.optumlink.safeClick();
