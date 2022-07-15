@@ -24,11 +24,11 @@ public class SearchTest extends IfbIncorporatedTest {
 
         searchPage.searchdropdown.waitForElementToBeVisible(100);
         searchPage.searchdropdown.safeClick();
-        searchPage.searchboxlink.waitForElementToBeVisible(100);
-        searchPage.searchboxlink.input("Membership");
+        searchPage.searchboxtextbox.waitForElementToBeVisible(100);
+        searchPage.searchboxtextbox.input("Membership");
         searchPage.searchdropdown.safeClick();
-        searchPage.searchlinklink.safeClick();
-        searchPage.searchresultclicklink.waitForElementToBeVisible(100);
+        searchPage.searchbuttonbutton.safeClick();
+        searchPage.searchresultclicklink.waitForElementToBeVisible(200);
         searchPage.searchresultclicklink.safeClick();
 
         HomePage homePage = new HomePage(driver);

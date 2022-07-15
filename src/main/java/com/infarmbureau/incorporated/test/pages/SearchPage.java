@@ -20,12 +20,19 @@ public class SearchPage extends Page {
 
     public IfbDropDown searchdropdown = new IfbDropDown(driver, searchElement);
 
-    @FindBy(xpath = "//*[@id=\"d5b0c9e1-8a13-435e-a32d-351a52eefab8\"]")
+    @FindBy(xpath = "//*[@id=\"5b557b81-678e-4364-b22e-1c8aefe6190c\"]")
     private WebElement searchboxElement;
 
-    public IfbTextBox searchboxlink = new IfbTextBox(driver, searchboxElement);
+    public IfbTextBox searchboxtextbox = new IfbTextBox(driver, searchboxElement);
 
     //*[@id="d5b0c9e1-8a13-435e-a32d-351a52eefab8"]
+
+    //*[@id="c40e07c0-f438-4fc4-8ca2-b636128042b9"]
+
+    @FindBy(xpath = "//*[@id=\"c40e07c0-f438-4fc4-8ca2-b636128042b9\"]")
+    private WebElement searchbuttonElement;
+
+    public IfbButton searchbuttonbutton = new IfbButton(driver, searchbuttonElement);
 
     @FindBy(xpath = "//*[@id=\"686bd193-95ee-440d-8032-74237d9ef0c5\"]\n")
     private WebElement searchlinkElement;
